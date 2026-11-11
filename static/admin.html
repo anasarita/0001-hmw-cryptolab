@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Lab - Consola de Control & Auditoría Forense</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+
+  <!-- Subtle Top System Bar -->
+  <div class="system-subbar">
+    <span>CRYPTO LAB &bull; CENTRO DE CONTROL & AUDITORÍA FORENSE</span>
+    <span class="mono">MÓDULO DE INVESTIGACIÓN</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <a href="/admin" class="logo">
+        <span class="logo-tag">CRYPTO LAB</span>
+        <span class="logo-badge logo-badge-admin">ADMIN</span>
+      </a>
+      <span style="font-size: 0.8rem; color: var(--text-muted); border-left: 1px solid var(--border-color); padding-left: 1rem;">
+        Consola de Investigación Financiera
+      </span>
+    </div>
+
+    <div id="admin-nav-right" style="display: none; align-items: center; gap: 0.75rem;">
+      <span id="admin-user-label" style="font-weight: 700; font-size: 0.85rem; color: #fff;"></span>
+      <a href="/" target="_blank" class="btn btn-secondary btn-sm">Vista Operativa</a>
+      <button class="btn btn-outline btn-sm" id="btn-admin-logout">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- VIEW 1: ADMIN LOGIN -->
+    <section id="view-admin-login" style="max-width: 440px; margin: 4.5rem auto;">
+      <div class="card" style="padding: 2.25rem;">
+        <div style="margin-bottom: 2rem;">
+          <h1 style="font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">Acceso Administrador</h1>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Consola de supervisión de mercado y análisis forense de transacciones.</p>
+        </div>
+
+        <form id="form-admin-login">
+          <div class="form-group">
+            <label class="form-label">Usuario Administrador</label>
+            <input type="text" id="admin-username" class="form-control" placeholder="Ej: admin_forense" required autofocus>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Contraseña</label>
+            <input type="password" id="admin-password" class="form-control" placeholder="••••••••" required>
+            <small style="color: var(--text-dim); font-size: 0.75rem;">Credenciales de acceso seguro administradas en el servidor.</small>
+          </div>
+
+          <div id="admin-login-alert" style="display: none; padding: 0.75rem; border-radius: 6px; margin-bottom: 1rem; font-size: 0.85rem;" class="badge-danger"></div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-admin-submit-login">
+            <span>Iniciar Sesión</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- VIEW 2: ADMIN DASHBOARD -->
+    <section id="view-admin-dashboard" style="display: none;">
+
+      <!-- MARKET REPLAY MASTER CONTROLLER BAR -->
+      <div class="card" style="margin-bottom: 1.5rem; border-left: 3px solid var(--accent);">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.25rem;">
+              <span id="admin-replay-badge" class="badge badge-success">EN EJECUCIÓN 48X</span>
+              <span style="font-weight: 800; font-size: 1.05rem; color: #fff;">Control Maestro de Mercado (Market Replay D-015)</span>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">
+              Reproduciendo serie temporal de <strong>10 de Noviembre de 2026</strong> sincronizada globalmente.
+              Hora Histórica: <span id="admin-replay-sim-time" class="mono" style="color: var(--accent); font-weight: 700;">10 Nov 2026 — 00:00:00 UTC</span>
+            </div>
+          </div>
+
+          <!-- Controls Button Group -->
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem;">
+            <button class="btn btn-primary btn-sm" id="btn-admin-replay-play" onclick="adminReplayAction('play')">
+              Reanudar
+            </button>
+            <button class="btn btn-secondary btn-sm" id="btn-admin-replay-pause" onclick="adminReplayAction('pause')">
+              Pausar
+            </button>
+            <button class="btn btn-secondary btn-sm" id="btn-admin-replay-reset" onclick="adminReplayAction('reset')">
+              Reiniciar
+            </button>
+
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-left: 0.5rem;">
+              <label style="font-size: 0.78rem; color: var(--text-dim); font-weight: 600;">Velocidad:</label>
+              <select id="select-admin-replay-speed" class="form-control mono" style="padding: 0.35rem 0.6rem; font-size: 0.8rem; width: auto;" onchange="adminReplaySetSpeed(this.value)">
+                <option value="1">1x (Tiempo Real)</option>
+                <option value="24">24x (24h en 1h)</option>
+                <option value="48" selected>48x (Recomendado: 24h en 30m)</option>
+                <option value="96">96x (24h en 15m)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); display: flex; align-items: center; gap: 1rem;">
+          <span style="font-size: 0.75rem; color: var(--text-dim); white-space: nowrap;">Progreso Sesión:</span>
+          <div style="flex: 1; background: #090e1a; border-radius: 9999px; height: 6px; overflow: hidden; border: 1px solid var(--border-color);">
+            <div id="admin-replay-prog-bar" style="background: var(--accent); width: 0%; height: 100%; transition: width 0.3s ease;"></div>
+          </div>
+          <span id="admin-replay-elapsed-text" class="mono" style="font-size: 0.78rem; color: var(--accent); font-weight: 700; white-space: nowrap;">00:00 / 30:00 (0%)</span>
+        </div>
+      </div>
+
+      <!-- Admin Top Navigation Tabs -->
+      <nav class="tabs" style="margin-bottom: 1.5rem;">
+        <button class="tab-btn active" data-tab="tab-admin-rooms">Gestión de Salas</button>
+        <button class="tab-btn" data-tab="tab-admin-monitor">Monitor de Operaciones</button>
+        <button class="tab-btn" data-tab="tab-admin-forensics">Investigación Forense</button>
+      </nav>
+
+      <!-- TAB A: ROOMS MANAGEMENT -->
+      <div id="tab-admin-rooms" class="tab-pane">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Salas de Operación</h2>
+              <div class="card-subtitle">Administración de salas, dotación inicial y proyección de acceso</div>
+            </div>
+            <button class="btn btn-primary" onclick="openCreateRoomModal()">Nueva Sala</button>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Nombre de Sala</th>
+                  <th class="text-right">Saldo Inicial COP</th>
+                  <th class="text-right">Participantes</th>
+                  <th class="text-right">Transacciones</th>
+                  <th>Estado</th>
+                  <th class="text-right">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="rooms-table-body">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Connection Helper Card -->
+        <div class="card" style="background: rgba(14, 22, 40, 0.5); border-left: 3px solid var(--primary);">
+          <h3 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem;">Conexión de Red Local (Wi-Fi)</h3>
+          <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6;">
+            El servidor está disponible en la red local. Los participantes pueden conectarse desde dispositivos móviles o computadores en la misma red Wi-Fi escaneando el código QR o accediendo a la dirección IP indicada.
+          </p>
+          <div id="net-info-box" style="margin-top: 0.75rem; font-size: 0.84rem;" class="mono"></div>
+        </div>
+      </div>
+
+      <!-- TAB B: LIVE ROOM MONITOR -->
+      <div id="tab-admin-monitor" class="tab-pane" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <label style="font-weight: 700; color: var(--text-muted); font-size: 0.85rem;">Sala Seleccionada:</label>
+            <select id="select-active-room" class="form-control" style="max-width: 280px; font-weight: 700;" onchange="loadRoomStats()">
+              <!-- Dynamically populated -->
+            </select>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-accent btn-sm" onclick="openProjectorModal()">Proyectar acceso</button>
+            <button class="btn btn-secondary btn-sm" onclick="loadRoomStats()">Actualizar monitor</button>
+          </div>
+        </div>
+
+        <!-- Room Statistics Grid -->
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-label">Participantes Registrados</div>
+            <div class="stat-value mono" id="room-stat-users">0</div>
+            <div class="stat-sub">Operadores activos en sala</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Volumen Negociado (COP)</div>
+            <div class="stat-value mono" id="room-stat-volume">COP 0</div>
+            <div class="stat-sub">Total en compras y ventas de criptoactivos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Comisiones Recaudadas (0.2%)</div>
+            <div class="stat-value mono" id="room-stat-fees" style="color: var(--warning);">COP 0</div>
+            <div class="stat-sub">Ingresos por intermediación de plataforma</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Transferencias Ejecutadas</div>
+            <div class="stat-value mono" id="room-stat-transfers" style="font-size: 1.25rem;">0 Internas / 0 Externas</div>
+            <div class="stat-sub">Flujos entre billeteras y salidas</div>
+          </div>
+        </div>
+
+        <!-- Participants Table -->
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Participantes y Balances en Tiempo Real</h2>
+              <div class="card-subtitle">Custodia bancaria, billetera disponible y posiciones en activos</div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Alias</th>
+                  <th class="text-right">Banco (COP)</th>
+                  <th class="text-right">Billetera (COP)</th>
+                  <th class="text-right">BTC</th>
+                  <th class="text-right">ETH</th>
+                  <th class="text-right">USDT</th>
+                  <th class="text-right">SOL</th>
+                  <th class="text-right">Operaciones</th>
+                  <th class="text-right">Auditoría</th>
+                </tr>
+              </thead>
+              <tbody id="monitor-participants-table">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Recent Room Transactions (Full 10 columns as requested) -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Registro General de Operaciones en la Sala</h2>
+              <div class="card-subtitle">Auditoría cronológica de todos los movimientos internos y de mercado</div>
+            </div>
+            <button class="btn btn-secondary btn-sm" onclick="loadRoomStats()">Actualizar</button>
+          </div>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Fecha / Hora</th>
+                  <th>Operación</th>
+                  <th>Actor / Origen</th>
+                  <th>Destino</th>
+                  <th>Activo</th>
+                  <th class="text-right">Cantidad</th>
+                  <th class="text-right">Valor en COP</th>
+                  <th class="text-right">Comisión</th>
+                  <th>Estado</th>
+                  <th>Hash / Referencia</th>
+                </tr>
+              </thead>
+              <tbody id="monitor-recent-txs-table">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB C: FORENSIC INVESTIGATION & GRAPH -->
+      <div id="tab-admin-forensics" class="tab-pane" style="display: none;">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <label style="font-weight: 700; color: #fff; font-size: 0.88rem;">Seleccionar Participante Objetivo:</label>
+              <select id="select-forensic-participant" class="form-control" style="min-width: 260px; font-weight: 700;" onchange="runForensicInvestigation()">
+                <!-- Dynamically populated -->
+              </select>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <button class="btn btn-primary" onclick="generateAuditReportModal()">Generar Informe de Auditoría</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="forensic-results-container" style="display: none;">
+
+          <!-- Subject Financial Summary -->
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-label">Sujeto Investigado</div>
+              <div class="stat-value" id="f-target-alias" style="color: var(--accent); font-size: 1.4rem;">-</div>
+              <div class="stat-sub" id="f-target-date">-</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Saldo Inicial Asignado</div>
+              <div class="stat-value mono" id="f-target-init-balance">COP 0</div>
+              <div class="stat-sub">Asignación central inicial</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Saldo Final Consolidado</div>
+              <div class="stat-value mono" id="f-target-final-balance">COP 0</div>
+              <div class="stat-sub" id="f-target-balances-breakdown">Banco + Billetera</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Estado de Conciliación</div>
+              <div class="stat-value" id="f-target-reconcile-badge">-</div>
+              <div class="stat-sub">Validación matemática contable</div>
+            </div>
+          </div>
+
+          <!-- Risk Alerts Section -->
+          <div class="card" style="margin-bottom: 1.5rem; border-color: rgba(245, 158, 11, 0.4);">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title" style="color: #fbbf24;">Indicadores Técnicos de Riesgo Detectados</h2>
+                <div class="card-subtitle">Patrones de transferencias y velocidad identificados para revisión</div>
+              </div>
+              <span class="badge badge-warning" id="f-alert-count">0 Alertas</span>
+            </div>
+            <div id="f-alerts-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Forensic Graph Section -->
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Trazabilidad y Grafo de Transferencias</h2>
+                <div class="card-subtitle">
+                  Rastreo de saltos sucesivos entre participantes y detección de destinos externos simulados
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <span class="badge" style="background:#1e3a8a; color:#93c5fd; border:1px solid #3b82f6;">Objetivo</span>
+                <span class="badge" style="background:#0f766e; color:#5eead4; border:1px solid #14b8a6;">Intermediario</span>
+                <span class="badge" style="background:#7f1d1d; color:#fca5a5; border:1px solid #ef4444;">Destino Externo</span>
+              </div>
+            </div>
+
+            <!-- Network Canvas -->
+            <div id="graph-container">
+              <!-- Vis-network canvas or SVG fallback injected here -->
+            </div>
+
+            <!-- Chains Table -->
+            <div style="margin-top: 1rem;">
+              <h3 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.04em;">
+                Rutas de Transferencias Identificadas:
+              </h3>
+              <div id="f-chains-list" style="font-size: 0.88rem; color: var(--text-muted);"></div>
+            </div>
+          </div>
+
+          <!-- Counterparties Table -->
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Participantes Relacionados (Contrapartes)</h2>
+                <div class="card-subtitle">Volumen de interacción directa con otras cuentas</div>
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Participante</th>
+                    <th class="text-right">Transferencias Enviadas</th>
+                    <th class="text-right">Transferencias Recibidas</th>
+                    <th>Activos Involucrados</th>
+                  </tr>
+                </thead>
+                <tbody id="f-counterparties-table">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Objective Findings -->
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Hallazgos Fácticos de Auditoría</h2>
+                <div class="card-subtitle">Resumen ejecutivo generado a partir de la reconstrucción de transacciones</div>
+              </div>
+            </div>
+            <div id="f-findings-list" style="font-size: 0.88rem; line-height: 1.7; color: var(--text-main);">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Discreet Footer Legal Notice -->
+    <footer class="footer-note">
+      CRYPTO LAB &bull; Módulo de Investigación y Auditoría Forense de Transacciones.
+    </footer>
+
+  </main>
+
+  <!-- MODAL: CREATE ROOM -->
+  <div class="modal-overlay" id="modal-create-room">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">Crear Sala de Operación</h3>
+        <button class="modal-close" onclick="closeModal('modal-create-room')">&times;</button>
+      </div>
+      <form id="form-create-room" onsubmit="handleCreateRoom(event)">
+        <div class="form-group">
+          <label class="form-label">Código de la Sala</label>
+          <input type="text" id="cr-code" class="form-control mono" placeholder="Ej: LAB101" required style="text-transform: uppercase; font-weight: 700;">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Nombre de la Sesión</label>
+          <input type="text" id="cr-name" class="form-control" placeholder="Ej: Caso Comercializadora Horizonte - Sesión 1" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Saldo Bancario Inicial por Participante (COP)</label>
+          <input type="number" id="cr-balance" class="form-control mono" value="50000000" min="1000000" step="1000000" required>
+          <small style="color: var(--text-dim); font-size: 0.75rem;">Fondos asignados en cuenta de custodia a cada participante nuevo.</small>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('modal-create-room')">Cancelar</button>
+          <button type="submit" class="btn btn-primary" id="btn-submit-create-room">Crear Sala</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: PROJECTOR / CLASSROOM QR -->
+  <div class="modal-overlay" id="modal-projector">
+    <div class="modal-content" style="max-width: 620px; text-align: center;">
+      <div class="modal-header">
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Proyección de Acceso a Sala</h3>
+        <button class="modal-close" onclick="closeModal('modal-projector')">&times;</button>
+      </div>
+
+      <div style="margin: 1rem 0;">
+        <h2 id="proj-room-title" style="font-size: 1.45rem; font-weight: 800; color: var(--accent); margin-bottom: 0.3rem;"></h2>
+        <div id="proj-room-code-badge" style="font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 1.25rem;"></div>
+
+        <div style="background: #fff; display: inline-block; padding: 1.1rem; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+          <img id="proj-qr-img" src="" alt="Código QR de Acceso" style="width: 240px; height: 240px; display: block;">
+        </div>
+
+        <div style="margin-top: 1.35rem; background: rgba(10, 15, 29, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 0.9rem;">
+          <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.3rem;">Enlace directo para participantes en la misma red Wi-Fi:</div>
+          <div id="proj-url-text" class="mono" style="font-size: 1.05rem; font-weight: 700; color: var(--primary);"></div>
+        </div>
+
+        <div style="margin-top: 0.85rem; font-size: 0.8rem; color: var(--text-dim);">
+          Escanea el código QR desde cualquier dispositivo conectado a la misma red para ingresar al simulador.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: EXECUTIVE FORENSIC AUDIT REPORT (PRINTABLE TO PDF) -->
+  <div class="modal-overlay" id="modal-audit-report">
+    <div class="modal-content" style="max-width: 960px; padding: 2rem;">
+      <div class="modal-header" id="print-ignore">
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: #fff;">Informe de Auditoría de Transacciones</h3>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-primary btn-sm" onclick="window.print()">Imprimir / Guardar en PDF</button>
+          <button class="modal-close" onclick="closeModal('modal-audit-report')">&times;</button>
+        </div>
+      </div>
+
+      <!-- Printable Report Document Container -->
+      <div id="report-printable-area" class="audit-report-container">
+        <!-- Rendered dynamically with the 7-part executive format -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/admin.js"></script>
+</body>
+</html>

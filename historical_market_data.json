@@ -1,0 +1,4717 @@
+{
+  "dataset_id": "HIST_20261110_COT",
+  "dataset_name": "Jornada Efectiva 10 de Noviembre de 2026 (Hora Colombia / UTC-5)",
+  "source_data": "CoinGecko Market API (cotizaciones históricas a intervalos de 5 minutos)",
+  "conversion_currency": "COP (Pesos Colombianos)",
+  "exchange_rate_documentation": {
+    "tasa_cop_por_usd": 3269.88,
+    "fuente": "Banco de la República de Colombia (https://www.banrep.gov.co/) - Tasa Representativa del Mercado (TRM) oficial",
+    "fecha_referencia": "2026-11-10",
+    "metodologia": "Precio_COP = round(Precio_USD_Observado * 3269.88, 2)"
+  },
+  "date_cot": "10 de Noviembre de 2026",
+  "coverage_status": "Intervalo real disponible hasta el momento de descarga (16:54:30 COT)",
+  "total_observed_ticks": 204,
+  "start_cot_iso": "2026-11-10T00:00:00-05:00",
+  "end_cot_iso": "2026-11-10T16:54:30-05:00",
+  "start_utc_iso": "2026-11-10T05:00:00+00:00",
+  "end_utc_iso": "2026-11-10T21:54:30+00:00",
+  "effective_hours_observed": 16.91,
+  "total_span_seconds": 60870.0,
+  "academic_session_duration_seconds": 1800.0,
+  "speed_factor_48x_or_adjusted": 33.82,
+  "ticks": [
+    {
+      "tick_index": 0,
+      "timestamp_ms": 1794286800000,
+      "datetime_utc_iso": "2026-11-10T05:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:00:00-05:00",
+      "display_time_cot": "00:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244184510.13,
+        "ETH": 6928562.34,
+        "USDT": 3266.41,
+        "SOL": 281027.83
+      },
+      "prices_usd_raw": {
+        "BTC": 74676.9,
+        "ETH": 2118.9,
+        "USDT": 0.9989,
+        "SOL": 85.94
+      },
+      "sim_second": 0.0
+    },
+    {
+      "tick_index": 1,
+      "timestamp_ms": 1794287100000,
+      "datetime_utc_iso": "2026-11-10T05:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:05:00-05:00",
+      "display_time_cot": "00:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244292680.77,
+        "ETH": 6936039.58,
+        "USDT": 3266.75,
+        "SOL": 281645.79
+      },
+      "prices_usd_raw": {
+        "BTC": 74709.98,
+        "ETH": 2121.19,
+        "USDT": 0.999,
+        "SOL": 86.13
+      },
+      "sim_second": 300.0
+    },
+    {
+      "tick_index": 2,
+      "timestamp_ms": 1794287400000,
+      "datetime_utc_iso": "2026-11-10T05:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:10:00-05:00",
+      "display_time_cot": "00:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244317656.37,
+        "ETH": 6939841.21,
+        "USDT": 3266.53,
+        "SOL": 281661.42
+      },
+      "prices_usd_raw": {
+        "BTC": 74717.62,
+        "ETH": 2122.35,
+        "USDT": 0.999,
+        "SOL": 86.14
+      },
+      "sim_second": 600.0
+    },
+    {
+      "tick_index": 3,
+      "timestamp_ms": 1794287700000,
+      "datetime_utc_iso": "2026-11-10T05:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:15:00-05:00",
+      "display_time_cot": "00:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244492758.07,
+        "ETH": 6942287.36,
+        "USDT": 3266.75,
+        "SOL": 281711.14
+      },
+      "prices_usd_raw": {
+        "BTC": 74771.17,
+        "ETH": 2123.1,
+        "USDT": 0.999,
+        "SOL": 86.15
+      },
+      "sim_second": 900.0
+    },
+    {
+      "tick_index": 4,
+      "timestamp_ms": 1794288000000,
+      "datetime_utc_iso": "2026-11-10T05:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:20:00-05:00",
+      "display_time_cot": "00:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244428858.38,
+        "ETH": 6939169.53,
+        "USDT": 3266.81,
+        "SOL": 281344.7
+      },
+      "prices_usd_raw": {
+        "BTC": 74751.63,
+        "ETH": 2122.15,
+        "USDT": 0.9991,
+        "SOL": 86.04
+      },
+      "sim_second": 1200.0
+    },
+    {
+      "tick_index": 5,
+      "timestamp_ms": 1794288300000,
+      "datetime_utc_iso": "2026-11-10T05:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:25:00-05:00",
+      "display_time_cot": "00:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244401615.64,
+        "ETH": 6936028.61,
+        "USDT": 3266.75,
+        "SOL": 281070.44
+      },
+      "prices_usd_raw": {
+        "BTC": 74743.3,
+        "ETH": 2121.19,
+        "USDT": 0.999,
+        "SOL": 85.96
+      },
+      "sim_second": 1500.0
+    },
+    {
+      "tick_index": 6,
+      "timestamp_ms": 1794288600000,
+      "datetime_utc_iso": "2026-11-10T05:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:30:00-05:00",
+      "display_time_cot": "00:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244309450.11,
+        "ETH": 6934685.65,
+        "USDT": 3266.73,
+        "SOL": 281187.45
+      },
+      "prices_usd_raw": {
+        "BTC": 74715.11,
+        "ETH": 2120.78,
+        "USDT": 0.999,
+        "SOL": 85.99
+      },
+      "sim_second": 1800.0
+    },
+    {
+      "tick_index": 7,
+      "timestamp_ms": 1794288900000,
+      "datetime_utc_iso": "2026-11-10T05:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:35:00-05:00",
+      "display_time_cot": "00:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244204246.17,
+        "ETH": 6933899.54,
+        "USDT": 3266.71,
+        "SOL": 281326.54
+      },
+      "prices_usd_raw": {
+        "BTC": 74682.94,
+        "ETH": 2120.54,
+        "USDT": 0.999,
+        "SOL": 86.04
+      },
+      "sim_second": 2100.0
+    },
+    {
+      "tick_index": 8,
+      "timestamp_ms": 1794289200000,
+      "datetime_utc_iso": "2026-11-10T05:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:40:00-05:00",
+      "display_time_cot": "00:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244481580.53,
+        "ETH": 6944428.3,
+        "USDT": 3266.73,
+        "SOL": 281740.33
+      },
+      "prices_usd_raw": {
+        "BTC": 74767.75,
+        "ETH": 2123.76,
+        "USDT": 0.999,
+        "SOL": 86.16
+      },
+      "sim_second": 2400.0
+    },
+    {
+      "tick_index": 9,
+      "timestamp_ms": 1794289500000,
+      "datetime_utc_iso": "2026-11-10T05:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:45:00-05:00",
+      "display_time_cot": "00:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244603112.87,
+        "ETH": 6947482.68,
+        "USDT": 3266.69,
+        "SOL": 281860.53
+      },
+      "prices_usd_raw": {
+        "BTC": 74804.92,
+        "ETH": 2124.69,
+        "USDT": 0.999,
+        "SOL": 86.2
+      },
+      "sim_second": 2700.0
+    },
+    {
+      "tick_index": 10,
+      "timestamp_ms": 1794289800000,
+      "datetime_utc_iso": "2026-11-10T05:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:50:00-05:00",
+      "display_time_cot": "00:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244807614.92,
+        "ETH": 6957094.56,
+        "USDT": 3266.68,
+        "SOL": 282536.63
+      },
+      "prices_usd_raw": {
+        "BTC": 74867.46,
+        "ETH": 2127.63,
+        "USDT": 0.999,
+        "SOL": 86.41
+      },
+      "sim_second": 3000.0
+    },
+    {
+      "tick_index": 11,
+      "timestamp_ms": 1794290100000,
+      "datetime_utc_iso": "2026-11-10T05:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T00:55:00-05:00",
+      "display_time_cot": "00:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 00:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244649518.79,
+        "ETH": 6952373.27,
+        "USDT": 3266.61,
+        "SOL": 282361.64
+      },
+      "prices_usd_raw": {
+        "BTC": 74819.11,
+        "ETH": 2126.19,
+        "USDT": 0.999,
+        "SOL": 86.35
+      },
+      "sim_second": 3300.0
+    },
+    {
+      "tick_index": 12,
+      "timestamp_ms": 1794290400000,
+      "datetime_utc_iso": "2026-11-10T06:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:00:00-05:00",
+      "display_time_cot": "01:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244392366.91,
+        "ETH": 6943120.22,
+        "USDT": 3266.69,
+        "SOL": 281892.96
+      },
+      "prices_usd_raw": {
+        "BTC": 74740.47,
+        "ETH": 2123.36,
+        "USDT": 0.999,
+        "SOL": 86.21
+      },
+      "sim_second": 3600.0
+    },
+    {
+      "tick_index": 13,
+      "timestamp_ms": 1794290700000,
+      "datetime_utc_iso": "2026-11-10T06:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:05:00-05:00",
+      "display_time_cot": "01:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244237921.5,
+        "ETH": 6935756.8,
+        "USDT": 3266.7,
+        "SOL": 281419.17
+      },
+      "prices_usd_raw": {
+        "BTC": 74693.24,
+        "ETH": 2121.1,
+        "USDT": 0.999,
+        "SOL": 86.06
+      },
+      "sim_second": 3900.0
+    },
+    {
+      "tick_index": 14,
+      "timestamp_ms": 1794291000000,
+      "datetime_utc_iso": "2026-11-10T06:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:10:00-05:00",
+      "display_time_cot": "01:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243990984.21,
+        "ETH": 6924349.18,
+        "USDT": 3266.6,
+        "SOL": 281023.99
+      },
+      "prices_usd_raw": {
+        "BTC": 74617.72,
+        "ETH": 2117.62,
+        "USDT": 0.999,
+        "SOL": 85.94
+      },
+      "sim_second": 4200.0
+    },
+    {
+      "tick_index": 15,
+      "timestamp_ms": 1794291300000,
+      "datetime_utc_iso": "2026-11-10T06:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:15:00-05:00",
+      "display_time_cot": "01:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243843188.09,
+        "ETH": 6920252.73,
+        "USDT": 3266.7,
+        "SOL": 280770.47
+      },
+      "prices_usd_raw": {
+        "BTC": 74572.52,
+        "ETH": 2116.36,
+        "USDT": 0.999,
+        "SOL": 85.87
+      },
+      "sim_second": 4500.0
+    },
+    {
+      "tick_index": 16,
+      "timestamp_ms": 1794291600000,
+      "datetime_utc_iso": "2026-11-10T06:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:20:00-05:00",
+      "display_time_cot": "01:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243618295.86,
+        "ETH": 6913577.99,
+        "USDT": 3266.72,
+        "SOL": 280543.14
+      },
+      "prices_usd_raw": {
+        "BTC": 74503.74,
+        "ETH": 2114.32,
+        "USDT": 0.999,
+        "SOL": 85.8
+      },
+      "sim_second": 4800.0
+    },
+    {
+      "tick_index": 17,
+      "timestamp_ms": 1794291900000,
+      "datetime_utc_iso": "2026-11-10T06:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:25:00-05:00",
+      "display_time_cot": "01:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243937532.52,
+        "ETH": 6922300.43,
+        "USDT": 3266.7,
+        "SOL": 281003.69
+      },
+      "prices_usd_raw": {
+        "BTC": 74601.37,
+        "ETH": 2116.99,
+        "USDT": 0.999,
+        "SOL": 85.94
+      },
+      "sim_second": 5100.0
+    },
+    {
+      "tick_index": 18,
+      "timestamp_ms": 1794292200000,
+      "datetime_utc_iso": "2026-11-10T06:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:30:00-05:00",
+      "display_time_cot": "01:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243929761.46,
+        "ETH": 6919751.79,
+        "USDT": 3266.63,
+        "SOL": 280970.92
+      },
+      "prices_usd_raw": {
+        "BTC": 74598.99,
+        "ETH": 2116.21,
+        "USDT": 0.999,
+        "SOL": 85.93
+      },
+      "sim_second": 5400.0
+    },
+    {
+      "tick_index": 19,
+      "timestamp_ms": 1794292500000,
+      "datetime_utc_iso": "2026-11-10T06:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:35:00-05:00",
+      "display_time_cot": "01:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243894418.38,
+        "ETH": 6919098.54,
+        "USDT": 3266.68,
+        "SOL": 280884.32
+      },
+      "prices_usd_raw": {
+        "BTC": 74588.19,
+        "ETH": 2116.01,
+        "USDT": 0.999,
+        "SOL": 85.9
+      },
+      "sim_second": 5700.0
+    },
+    {
+      "tick_index": 20,
+      "timestamp_ms": 1794292800000,
+      "datetime_utc_iso": "2026-11-10T06:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:40:00-05:00",
+      "display_time_cot": "01:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243887616.22,
+        "ETH": 6915256.57,
+        "USDT": 3266.62,
+        "SOL": 280803.77
+      },
+      "prices_usd_raw": {
+        "BTC": 74586.11,
+        "ETH": 2114.83,
+        "USDT": 0.999,
+        "SOL": 85.88
+      },
+      "sim_second": 6000.0
+    },
+    {
+      "tick_index": 21,
+      "timestamp_ms": 1794293100000,
+      "datetime_utc_iso": "2026-11-10T06:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:45:00-05:00",
+      "display_time_cot": "01:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244009808.66,
+        "ETH": 6917331.31,
+        "USDT": 3266.64,
+        "SOL": 281116.26
+      },
+      "prices_usd_raw": {
+        "BTC": 74623.48,
+        "ETH": 2115.47,
+        "USDT": 0.999,
+        "SOL": 85.97
+      },
+      "sim_second": 6300.0
+    },
+    {
+      "tick_index": 22,
+      "timestamp_ms": 1794293400000,
+      "datetime_utc_iso": "2026-11-10T06:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:50:00-05:00",
+      "display_time_cot": "01:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243936777.41,
+        "ETH": 6918766.76,
+        "USDT": 3266.56,
+        "SOL": 281084.41
+      },
+      "prices_usd_raw": {
+        "BTC": 74601.14,
+        "ETH": 2115.91,
+        "USDT": 0.999,
+        "SOL": 85.96
+      },
+      "sim_second": 6600.0
+    },
+    {
+      "tick_index": 23,
+      "timestamp_ms": 1794293700000,
+      "datetime_utc_iso": "2026-11-10T06:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T01:55:00-05:00",
+      "display_time_cot": "01:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 01:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243866886.58,
+        "ETH": 6918539.41,
+        "USDT": 3266.53,
+        "SOL": 281212.03
+      },
+      "prices_usd_raw": {
+        "BTC": 74579.77,
+        "ETH": 2115.84,
+        "USDT": 0.999,
+        "SOL": 86.0
+      },
+      "sim_second": 6900.0
+    },
+    {
+      "tick_index": 24,
+      "timestamp_ms": 1794294000000,
+      "datetime_utc_iso": "2026-11-10T07:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:00:00-05:00",
+      "display_time_cot": "02:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243822234.86,
+        "ETH": 6916959.01,
+        "USDT": 3266.62,
+        "SOL": 281253.59
+      },
+      "prices_usd_raw": {
+        "BTC": 74566.11,
+        "ETH": 2115.36,
+        "USDT": 0.999,
+        "SOL": 86.01
+      },
+      "sim_second": 7200.0
+    },
+    {
+      "tick_index": 25,
+      "timestamp_ms": 1794294300000,
+      "datetime_utc_iso": "2026-11-10T07:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:05:00-05:00",
+      "display_time_cot": "02:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244094601.24,
+        "ETH": 6925867.7,
+        "USDT": 3266.66,
+        "SOL": 281783.46
+      },
+      "prices_usd_raw": {
+        "BTC": 74649.41,
+        "ETH": 2118.08,
+        "USDT": 0.999,
+        "SOL": 86.18
+      },
+      "sim_second": 7500.0
+    },
+    {
+      "tick_index": 26,
+      "timestamp_ms": 1794294600000,
+      "datetime_utc_iso": "2026-11-10T07:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:10:00-05:00",
+      "display_time_cot": "02:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243913914.96,
+        "ETH": 6916328.26,
+        "USDT": 3266.76,
+        "SOL": 281299.27
+      },
+      "prices_usd_raw": {
+        "BTC": 74594.15,
+        "ETH": 2115.16,
+        "USDT": 0.999,
+        "SOL": 86.03
+      },
+      "sim_second": 7800.0
+    },
+    {
+      "tick_index": 27,
+      "timestamp_ms": 1794294900000,
+      "datetime_utc_iso": "2026-11-10T07:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:15:00-05:00",
+      "display_time_cot": "02:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243958237.9,
+        "ETH": 6913779.84,
+        "USDT": 3266.7,
+        "SOL": 281255.41
+      },
+      "prices_usd_raw": {
+        "BTC": 74607.7,
+        "ETH": 2114.38,
+        "USDT": 0.999,
+        "SOL": 86.01
+      },
+      "sim_second": 8100.0
+    },
+    {
+      "tick_index": 28,
+      "timestamp_ms": 1794295200000,
+      "datetime_utc_iso": "2026-11-10T07:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:20:00-05:00",
+      "display_time_cot": "02:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244114569.68,
+        "ETH": 6922127.14,
+        "USDT": 3266.81,
+        "SOL": 281599.55
+      },
+      "prices_usd_raw": {
+        "BTC": 74655.51,
+        "ETH": 2116.94,
+        "USDT": 0.9991,
+        "SOL": 86.12
+      },
+      "sim_second": 8400.0
+    },
+    {
+      "tick_index": 29,
+      "timestamp_ms": 1794295500000,
+      "datetime_utc_iso": "2026-11-10T07:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:25:00-05:00",
+      "display_time_cot": "02:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244367750.09,
+        "ETH": 6931384.3,
+        "USDT": 3266.82,
+        "SOL": 281806.93
+      },
+      "prices_usd_raw": {
+        "BTC": 74732.94,
+        "ETH": 2119.77,
+        "USDT": 0.9991,
+        "SOL": 86.18
+      },
+      "sim_second": 8700.0
+    },
+    {
+      "tick_index": 30,
+      "timestamp_ms": 1794295800000,
+      "datetime_utc_iso": "2026-11-10T07:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:30:00-05:00",
+      "display_time_cot": "02:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244329075.99,
+        "ETH": 6930320.6,
+        "USDT": 3266.65,
+        "SOL": 281975.68
+      },
+      "prices_usd_raw": {
+        "BTC": 74721.11,
+        "ETH": 2119.44,
+        "USDT": 0.999,
+        "SOL": 86.23
+      },
+      "sim_second": 9000.0
+    },
+    {
+      "tick_index": 31,
+      "timestamp_ms": 1794296100000,
+      "datetime_utc_iso": "2026-11-10T07:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:35:00-05:00",
+      "display_time_cot": "02:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244524461.8,
+        "ETH": 6936370.97,
+        "USDT": 3266.89,
+        "SOL": 282358.18
+      },
+      "prices_usd_raw": {
+        "BTC": 74780.87,
+        "ETH": 2121.29,
+        "USDT": 0.9991,
+        "SOL": 86.35
+      },
+      "sim_second": 9300.0
+    },
+    {
+      "tick_index": 32,
+      "timestamp_ms": 1794296400000,
+      "datetime_utc_iso": "2026-11-10T07:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:40:00-05:00",
+      "display_time_cot": "02:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244420604.87,
+        "ETH": 6928689.37,
+        "USDT": 3266.87,
+        "SOL": 281700.81
+      },
+      "prices_usd_raw": {
+        "BTC": 74749.11,
+        "ETH": 2118.94,
+        "USDT": 0.9991,
+        "SOL": 86.15
+      },
+      "sim_second": 9600.0
+    },
+    {
+      "tick_index": 33,
+      "timestamp_ms": 1794296700000,
+      "datetime_utc_iso": "2026-11-10T07:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:45:00-05:00",
+      "display_time_cot": "02:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244627375.34,
+        "ETH": 6933261.12,
+        "USDT": 3266.91,
+        "SOL": 281803.95
+      },
+      "prices_usd_raw": {
+        "BTC": 74812.34,
+        "ETH": 2120.34,
+        "USDT": 0.9991,
+        "SOL": 86.18
+      },
+      "sim_second": 9900.0
+    },
+    {
+      "tick_index": 34,
+      "timestamp_ms": 1794297000000,
+      "datetime_utc_iso": "2026-11-10T07:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:50:00-05:00",
+      "display_time_cot": "02:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244746198.33,
+        "ETH": 6933213.05,
+        "USDT": 3266.71,
+        "SOL": 281706.12
+      },
+      "prices_usd_raw": {
+        "BTC": 74848.68,
+        "ETH": 2120.33,
+        "USDT": 0.999,
+        "SOL": 86.15
+      },
+      "sim_second": 10200.0
+    },
+    {
+      "tick_index": 35,
+      "timestamp_ms": 1794297300000,
+      "datetime_utc_iso": "2026-11-10T07:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T02:55:00-05:00",
+      "display_time_cot": "02:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 02:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244694204.7,
+        "ETH": 6927712.61,
+        "USDT": 3266.7,
+        "SOL": 281556.0
+      },
+      "prices_usd_raw": {
+        "BTC": 74832.78,
+        "ETH": 2118.64,
+        "USDT": 0.999,
+        "SOL": 86.11
+      },
+      "sim_second": 10500.0
+    },
+    {
+      "tick_index": 36,
+      "timestamp_ms": 1794297600000,
+      "datetime_utc_iso": "2026-11-10T08:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:00:00-05:00",
+      "display_time_cot": "03:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244504523.16,
+        "ETH": 6913717.58,
+        "USDT": 3266.97,
+        "SOL": 281232.99
+      },
+      "prices_usd_raw": {
+        "BTC": 74774.77,
+        "ETH": 2114.36,
+        "USDT": 0.9991,
+        "SOL": 86.01
+      },
+      "sim_second": 10800.0
+    },
+    {
+      "tick_index": 37,
+      "timestamp_ms": 1794297900000,
+      "datetime_utc_iso": "2026-11-10T08:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:05:00-05:00",
+      "display_time_cot": "03:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244583047.85,
+        "ETH": 6913880.72,
+        "USDT": 3267.11,
+        "SOL": 281198.63
+      },
+      "prices_usd_raw": {
+        "BTC": 74798.78,
+        "ETH": 2114.41,
+        "USDT": 0.9992,
+        "SOL": 86.0
+      },
+      "sim_second": 11100.0
+    },
+    {
+      "tick_index": 38,
+      "timestamp_ms": 1794298200000,
+      "datetime_utc_iso": "2026-11-10T08:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:10:00-05:00",
+      "display_time_cot": "03:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244320472.19,
+        "ETH": 6907912.21,
+        "USDT": 3266.78,
+        "SOL": 280680.18
+      },
+      "prices_usd_raw": {
+        "BTC": 74718.48,
+        "ETH": 2112.59,
+        "USDT": 0.9991,
+        "SOL": 85.84
+      },
+      "sim_second": 11400.0
+    },
+    {
+      "tick_index": 39,
+      "timestamp_ms": 1794298500000,
+      "datetime_utc_iso": "2026-11-10T08:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:15:00-05:00",
+      "display_time_cot": "03:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244295780.23,
+        "ETH": 6910583.66,
+        "USDT": 3266.88,
+        "SOL": 280854.72
+      },
+      "prices_usd_raw": {
+        "BTC": 74710.93,
+        "ETH": 2113.41,
+        "USDT": 0.9991,
+        "SOL": 85.89
+      },
+      "sim_second": 11700.0
+    },
+    {
+      "tick_index": 40,
+      "timestamp_ms": 1794298800000,
+      "datetime_utc_iso": "2026-11-10T08:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:20:00-05:00",
+      "display_time_cot": "03:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244162554.42,
+        "ETH": 6904575.87,
+        "USDT": 3266.9,
+        "SOL": 280344.35
+      },
+      "prices_usd_raw": {
+        "BTC": 74670.19,
+        "ETH": 2111.57,
+        "USDT": 0.9991,
+        "SOL": 85.74
+      },
+      "sim_second": 12000.0
+    },
+    {
+      "tick_index": 41,
+      "timestamp_ms": 1794299100000,
+      "datetime_utc_iso": "2026-11-10T08:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:25:00-05:00",
+      "display_time_cot": "03:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244120782.53,
+        "ETH": 6901693.93,
+        "USDT": 3266.85,
+        "SOL": 279870.52
+      },
+      "prices_usd_raw": {
+        "BTC": 74657.41,
+        "ETH": 2110.69,
+        "USDT": 0.9991,
+        "SOL": 85.59
+      },
+      "sim_second": 12300.0
+    },
+    {
+      "tick_index": 42,
+      "timestamp_ms": 1794299400000,
+      "datetime_utc_iso": "2026-11-10T08:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:30:00-05:00",
+      "display_time_cot": "03:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243942323.75,
+        "ETH": 6902884.69,
+        "USDT": 3266.87,
+        "SOL": 279949.91
+      },
+      "prices_usd_raw": {
+        "BTC": 74602.84,
+        "ETH": 2111.05,
+        "USDT": 0.9991,
+        "SOL": 85.61
+      },
+      "sim_second": 12600.0
+    },
+    {
+      "tick_index": 43,
+      "timestamp_ms": 1794299700000,
+      "datetime_utc_iso": "2026-11-10T08:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:35:00-05:00",
+      "display_time_cot": "03:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243407077.58,
+        "ETH": 6895727.24,
+        "USDT": 3266.81,
+        "SOL": 279690.39
+      },
+      "prices_usd_raw": {
+        "BTC": 74439.15,
+        "ETH": 2108.86,
+        "USDT": 0.9991,
+        "SOL": 85.54
+      },
+      "sim_second": 12900.0
+    },
+    {
+      "tick_index": 44,
+      "timestamp_ms": 1794300000000,
+      "datetime_utc_iso": "2026-11-10T08:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:40:00-05:00",
+      "display_time_cot": "03:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243639545.18,
+        "ETH": 6905311.8,
+        "USDT": 3266.57,
+        "SOL": 279981.54
+      },
+      "prices_usd_raw": {
+        "BTC": 74510.24,
+        "ETH": 2111.79,
+        "USDT": 0.999,
+        "SOL": 85.62
+      },
+      "sim_second": 13200.0
+    },
+    {
+      "tick_index": 45,
+      "timestamp_ms": 1794300300000,
+      "datetime_utc_iso": "2026-11-10T08:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:45:00-05:00",
+      "display_time_cot": "03:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243561332.65,
+        "ETH": 6904691.25,
+        "USDT": 3266.97,
+        "SOL": 280005.61
+      },
+      "prices_usd_raw": {
+        "BTC": 74486.32,
+        "ETH": 2111.6,
+        "USDT": 0.9991,
+        "SOL": 85.63
+      },
+      "sim_second": 13500.0
+    },
+    {
+      "tick_index": 46,
+      "timestamp_ms": 1794300600000,
+      "datetime_utc_iso": "2026-11-10T08:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:50:00-05:00",
+      "display_time_cot": "03:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243712761.26,
+        "ETH": 6908223.18,
+        "USDT": 3266.61,
+        "SOL": 280122.83
+      },
+      "prices_usd_raw": {
+        "BTC": 74532.63,
+        "ETH": 2112.68,
+        "USDT": 0.999,
+        "SOL": 85.67
+      },
+      "sim_second": 13800.0
+    },
+    {
+      "tick_index": 47,
+      "timestamp_ms": 1794300900000,
+      "datetime_utc_iso": "2026-11-10T08:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T03:55:00-05:00",
+      "display_time_cot": "03:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 03:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243776671.74,
+        "ETH": 6910508.71,
+        "USDT": 3266.59,
+        "SOL": 280187.07
+      },
+      "prices_usd_raw": {
+        "BTC": 74552.18,
+        "ETH": 2113.38,
+        "USDT": 0.999,
+        "SOL": 85.69
+      },
+      "sim_second": 14100.0
+    },
+    {
+      "tick_index": 48,
+      "timestamp_ms": 1794301200000,
+      "datetime_utc_iso": "2026-11-10T09:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:00:00-05:00",
+      "display_time_cot": "04:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 244046277.43,
+        "ETH": 6918055.85,
+        "USDT": 3266.7,
+        "SOL": 280560.34
+      },
+      "prices_usd_raw": {
+        "BTC": 74634.63,
+        "ETH": 2115.69,
+        "USDT": 0.999,
+        "SOL": 85.8
+      },
+      "sim_second": 14400.0
+    },
+    {
+      "tick_index": 49,
+      "timestamp_ms": 1794301500000,
+      "datetime_utc_iso": "2026-11-10T09:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:05:00-05:00",
+      "display_time_cot": "04:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243113498.77,
+        "ETH": 6876902.7,
+        "USDT": 3266.53,
+        "SOL": 279134.56
+      },
+      "prices_usd_raw": {
+        "BTC": 74349.36,
+        "ETH": 2103.11,
+        "USDT": 0.999,
+        "SOL": 85.37
+      },
+      "sim_second": 14700.0
+    },
+    {
+      "tick_index": 50,
+      "timestamp_ms": 1794301800000,
+      "datetime_utc_iso": "2026-11-10T09:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:10:00-05:00",
+      "display_time_cot": "04:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242602345.63,
+        "ETH": 6854388.94,
+        "USDT": 3266.81,
+        "SOL": 278304.58
+      },
+      "prices_usd_raw": {
+        "BTC": 74193.04,
+        "ETH": 2096.22,
+        "USDT": 0.9991,
+        "SOL": 85.11
+      },
+      "sim_second": 15000.0
+    },
+    {
+      "tick_index": 51,
+      "timestamp_ms": 1794302100000,
+      "datetime_utc_iso": "2026-11-10T09:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:15:00-05:00",
+      "display_time_cot": "04:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242803565.13,
+        "ETH": 6862216.3,
+        "USDT": 3266.72,
+        "SOL": 278601.96
+      },
+      "prices_usd_raw": {
+        "BTC": 74254.58,
+        "ETH": 2098.61,
+        "USDT": 0.999,
+        "SOL": 85.2
+      },
+      "sim_second": 15300.0
+    },
+    {
+      "tick_index": 52,
+      "timestamp_ms": 1794302400000,
+      "datetime_utc_iso": "2026-11-10T09:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:20:00-05:00",
+      "display_time_cot": "04:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243065108.16,
+        "ETH": 6874948.9,
+        "USDT": 3266.55,
+        "SOL": 278970.92
+      },
+      "prices_usd_raw": {
+        "BTC": 74334.57,
+        "ETH": 2102.51,
+        "USDT": 0.999,
+        "SOL": 85.32
+      },
+      "sim_second": 15600.0
+    },
+    {
+      "tick_index": 53,
+      "timestamp_ms": 1794302700000,
+      "datetime_utc_iso": "2026-11-10T09:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:25:00-05:00",
+      "display_time_cot": "04:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242828931.32,
+        "ETH": 6861339.9,
+        "USDT": 3266.92,
+        "SOL": 278446.39
+      },
+      "prices_usd_raw": {
+        "BTC": 74262.34,
+        "ETH": 2098.35,
+        "USDT": 0.9991,
+        "SOL": 85.15
+      },
+      "sim_second": 15900.0
+    },
+    {
+      "tick_index": 54,
+      "timestamp_ms": 1794303000000,
+      "datetime_utc_iso": "2026-11-10T09:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:30:00-05:00",
+      "display_time_cot": "04:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243253508.05,
+        "ETH": 6877312.6,
+        "USDT": 3266.9,
+        "SOL": 279074.02
+      },
+      "prices_usd_raw": {
+        "BTC": 74392.18,
+        "ETH": 2103.23,
+        "USDT": 0.9991,
+        "SOL": 85.35
+      },
+      "sim_second": 16200.0
+    },
+    {
+      "tick_index": 55,
+      "timestamp_ms": 1794303300000,
+      "datetime_utc_iso": "2026-11-10T09:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:35:00-05:00",
+      "display_time_cot": "04:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243062933.64,
+        "ETH": 6866940.81,
+        "USDT": 3266.92,
+        "SOL": 278753.44
+      },
+      "prices_usd_raw": {
+        "BTC": 74333.9,
+        "ETH": 2100.06,
+        "USDT": 0.9991,
+        "SOL": 85.25
+      },
+      "sim_second": 16500.0
+    },
+    {
+      "tick_index": 56,
+      "timestamp_ms": 1794303600000,
+      "datetime_utc_iso": "2026-11-10T09:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:40:00-05:00",
+      "display_time_cot": "04:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242979673.73,
+        "ETH": 6858398.59,
+        "USDT": 3266.84,
+        "SOL": 278813.42
+      },
+      "prices_usd_raw": {
+        "BTC": 74308.44,
+        "ETH": 2097.45,
+        "USDT": 0.9991,
+        "SOL": 85.27
+      },
+      "sim_second": 16800.0
+    },
+    {
+      "tick_index": 57,
+      "timestamp_ms": 1794303900000,
+      "datetime_utc_iso": "2026-11-10T09:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:45:00-05:00",
+      "display_time_cot": "04:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243114783.3,
+        "ETH": 6865499.84,
+        "USDT": 3266.92,
+        "SOL": 279285.98
+      },
+      "prices_usd_raw": {
+        "BTC": 74349.76,
+        "ETH": 2099.62,
+        "USDT": 0.9991,
+        "SOL": 85.41
+      },
+      "sim_second": 17100.0
+    },
+    {
+      "tick_index": 58,
+      "timestamp_ms": 1794304200000,
+      "datetime_utc_iso": "2026-11-10T09:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:50:00-05:00",
+      "display_time_cot": "04:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243297860.35,
+        "ETH": 6869616.53,
+        "USDT": 3266.69,
+        "SOL": 279482.08
+      },
+      "prices_usd_raw": {
+        "BTC": 74405.75,
+        "ETH": 2100.88,
+        "USDT": 0.999,
+        "SOL": 85.47
+      },
+      "sim_second": 17400.0
+    },
+    {
+      "tick_index": 59,
+      "timestamp_ms": 1794304500000,
+      "datetime_utc_iso": "2026-11-10T09:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T04:55:00-05:00",
+      "display_time_cot": "04:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 04:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243239835.34,
+        "ETH": 6866653.37,
+        "USDT": 3266.64,
+        "SOL": 279449.85
+      },
+      "prices_usd_raw": {
+        "BTC": 74388.0,
+        "ETH": 2099.97,
+        "USDT": 0.999,
+        "SOL": 85.46
+      },
+      "sim_second": 17700.0
+    },
+    {
+      "tick_index": 60,
+      "timestamp_ms": 1794304800000,
+      "datetime_utc_iso": "2026-11-10T10:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:00:00-05:00",
+      "display_time_cot": "05:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243437244.4,
+        "ETH": 6874727.21,
+        "USDT": 3266.66,
+        "SOL": 279614.81
+      },
+      "prices_usd_raw": {
+        "BTC": 74448.37,
+        "ETH": 2102.44,
+        "USDT": 0.999,
+        "SOL": 85.51
+      },
+      "sim_second": 18000.0
+    },
+    {
+      "tick_index": 61,
+      "timestamp_ms": 1794305100000,
+      "datetime_utc_iso": "2026-11-10T10:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:05:00-05:00",
+      "display_time_cot": "05:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243196426.12,
+        "ETH": 6864633.05,
+        "USDT": 3266.66,
+        "SOL": 278924.01
+      },
+      "prices_usd_raw": {
+        "BTC": 74374.73,
+        "ETH": 2099.35,
+        "USDT": 0.999,
+        "SOL": 85.3
+      },
+      "sim_second": 18300.0
+    },
+    {
+      "tick_index": 62,
+      "timestamp_ms": 1794305400000,
+      "datetime_utc_iso": "2026-11-10T10:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:10:00-05:00",
+      "display_time_cot": "05:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243114309.52,
+        "ETH": 6861071.16,
+        "USDT": 3266.82,
+        "SOL": 278904.71
+      },
+      "prices_usd_raw": {
+        "BTC": 74349.61,
+        "ETH": 2098.26,
+        "USDT": 0.9991,
+        "SOL": 85.3
+      },
+      "sim_second": 18600.0
+    },
+    {
+      "tick_index": 63,
+      "timestamp_ms": 1794305700000,
+      "datetime_utc_iso": "2026-11-10T10:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:15:00-05:00",
+      "display_time_cot": "05:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243056320.85,
+        "ETH": 6858075.21,
+        "USDT": 3266.86,
+        "SOL": 278764.14
+      },
+      "prices_usd_raw": {
+        "BTC": 74331.88,
+        "ETH": 2097.35,
+        "USDT": 0.9991,
+        "SOL": 85.25
+      },
+      "sim_second": 18900.0
+    },
+    {
+      "tick_index": 64,
+      "timestamp_ms": 1794306000000,
+      "datetime_utc_iso": "2026-11-10T10:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:20:00-05:00",
+      "display_time_cot": "05:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242789288.66,
+        "ETH": 6844137.99,
+        "USDT": 3266.97,
+        "SOL": 278295.84
+      },
+      "prices_usd_raw": {
+        "BTC": 74250.21,
+        "ETH": 2093.09,
+        "USDT": 0.9991,
+        "SOL": 85.11
+      },
+      "sim_second": 19200.0
+    },
+    {
+      "tick_index": 65,
+      "timestamp_ms": 1794306300000,
+      "datetime_utc_iso": "2026-11-10T10:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:25:00-05:00",
+      "display_time_cot": "05:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242735758.03,
+        "ETH": 6839924.18,
+        "USDT": 3266.94,
+        "SOL": 278153.92
+      },
+      "prices_usd_raw": {
+        "BTC": 74233.84,
+        "ETH": 2091.8,
+        "USDT": 0.9991,
+        "SOL": 85.07
+      },
+      "sim_second": 19500.0
+    },
+    {
+      "tick_index": 66,
+      "timestamp_ms": 1794306600000,
+      "datetime_utc_iso": "2026-11-10T10:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:30:00-05:00",
+      "display_time_cot": "05:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242737060.32,
+        "ETH": 6839126.7,
+        "USDT": 3266.88,
+        "SOL": 278424.14
+      },
+      "prices_usd_raw": {
+        "BTC": 74234.24,
+        "ETH": 2091.55,
+        "USDT": 0.9991,
+        "SOL": 85.15
+      },
+      "sim_second": 19800.0
+    },
+    {
+      "tick_index": 67,
+      "timestamp_ms": 1794306900000,
+      "datetime_utc_iso": "2026-11-10T10:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:35:00-05:00",
+      "display_time_cot": "05:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242666379.11,
+        "ETH": 6835463.6,
+        "USDT": 3266.84,
+        "SOL": 276630.79
+      },
+      "prices_usd_raw": {
+        "BTC": 74212.63,
+        "ETH": 2090.43,
+        "USDT": 0.9991,
+        "SOL": 84.6
+      },
+      "sim_second": 20100.0
+    },
+    {
+      "tick_index": 68,
+      "timestamp_ms": 1794307200000,
+      "datetime_utc_iso": "2026-11-10T10:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:40:00-05:00",
+      "display_time_cot": "05:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242615432.29,
+        "ETH": 6832421.52,
+        "USDT": 3266.75,
+        "SOL": 276543.88
+      },
+      "prices_usd_raw": {
+        "BTC": 74197.04,
+        "ETH": 2089.5,
+        "USDT": 0.999,
+        "SOL": 84.57
+      },
+      "sim_second": 20400.0
+    },
+    {
+      "tick_index": 69,
+      "timestamp_ms": 1794307500000,
+      "datetime_utc_iso": "2026-11-10T10:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:45:00-05:00",
+      "display_time_cot": "05:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242312588.05,
+        "ETH": 6821369.1,
+        "USDT": 3266.92,
+        "SOL": 276082.61
+      },
+      "prices_usd_raw": {
+        "BTC": 74104.43,
+        "ETH": 2086.12,
+        "USDT": 0.9991,
+        "SOL": 84.43
+      },
+      "sim_second": 20700.0
+    },
+    {
+      "tick_index": 70,
+      "timestamp_ms": 1794307800000,
+      "datetime_utc_iso": "2026-11-10T10:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:50:00-05:00",
+      "display_time_cot": "05:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242456308.75,
+        "ETH": 6827511.12,
+        "USDT": 3267.05,
+        "SOL": 276431.47
+      },
+      "prices_usd_raw": {
+        "BTC": 74148.38,
+        "ETH": 2088.0,
+        "USDT": 0.9991,
+        "SOL": 84.54
+      },
+      "sim_second": 21000.0
+    },
+    {
+      "tick_index": 71,
+      "timestamp_ms": 1794308100000,
+      "datetime_utc_iso": "2026-11-10T10:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T05:55:00-05:00",
+      "display_time_cot": "05:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 05:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242441967.29,
+        "ETH": 6829952.17,
+        "USDT": 3267.04,
+        "SOL": 276367.42
+      },
+      "prices_usd_raw": {
+        "BTC": 74144.0,
+        "ETH": 2088.75,
+        "USDT": 0.9991,
+        "SOL": 84.52
+      },
+      "sim_second": 21300.0
+    },
+    {
+      "tick_index": 72,
+      "timestamp_ms": 1794308400000,
+      "datetime_utc_iso": "2026-11-10T11:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:00:00-05:00",
+      "display_time_cot": "06:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242483178.57,
+        "ETH": 6831171.3,
+        "USDT": 3266.84,
+        "SOL": 275986.32
+      },
+      "prices_usd_raw": {
+        "BTC": 74156.6,
+        "ETH": 2089.12,
+        "USDT": 0.9991,
+        "SOL": 84.4
+      },
+      "sim_second": 21600.0
+    },
+    {
+      "tick_index": 73,
+      "timestamp_ms": 1794308700000,
+      "datetime_utc_iso": "2026-11-10T11:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:05:00-05:00",
+      "display_time_cot": "06:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242504483.58,
+        "ETH": 6830190.35,
+        "USDT": 3267.11,
+        "SOL": 276067.05
+      },
+      "prices_usd_raw": {
+        "BTC": 74163.11,
+        "ETH": 2088.82,
+        "USDT": 0.9992,
+        "SOL": 84.43
+      },
+      "sim_second": 21900.0
+    },
+    {
+      "tick_index": 74,
+      "timestamp_ms": 1794309000000,
+      "datetime_utc_iso": "2026-11-10T11:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:10:00-05:00",
+      "display_time_cot": "06:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242588975.93,
+        "ETH": 6844151.84,
+        "USDT": 3266.84,
+        "SOL": 276419.45
+      },
+      "prices_usd_raw": {
+        "BTC": 74188.95,
+        "ETH": 2093.09,
+        "USDT": 0.9991,
+        "SOL": 84.54
+      },
+      "sim_second": 22200.0
+    },
+    {
+      "tick_index": 75,
+      "timestamp_ms": 1794309300000,
+      "datetime_utc_iso": "2026-11-10T11:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:15:00-05:00",
+      "display_time_cot": "06:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242909097.43,
+        "ETH": 6855488.12,
+        "USDT": 3267.14,
+        "SOL": 277012.88
+      },
+      "prices_usd_raw": {
+        "BTC": 74286.85,
+        "ETH": 2096.56,
+        "USDT": 0.9992,
+        "SOL": 84.72
+      },
+      "sim_second": 22500.0
+    },
+    {
+      "tick_index": 76,
+      "timestamp_ms": 1794309600000,
+      "datetime_utc_iso": "2026-11-10T11:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:20:00-05:00",
+      "display_time_cot": "06:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242547705.91,
+        "ETH": 6842445.36,
+        "USDT": 3267.02,
+        "SOL": 276055.76
+      },
+      "prices_usd_raw": {
+        "BTC": 74176.33,
+        "ETH": 2092.57,
+        "USDT": 0.9991,
+        "SOL": 84.42
+      },
+      "sim_second": 22800.0
+    },
+    {
+      "tick_index": 77,
+      "timestamp_ms": 1794309900000,
+      "datetime_utc_iso": "2026-11-10T11:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:25:00-05:00",
+      "display_time_cot": "06:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242590844.59,
+        "ETH": 6841730.16,
+        "USDT": 3266.85,
+        "SOL": 275931.86
+      },
+      "prices_usd_raw": {
+        "BTC": 74189.53,
+        "ETH": 2092.35,
+        "USDT": 0.9991,
+        "SOL": 84.39
+      },
+      "sim_second": 23100.0
+    },
+    {
+      "tick_index": 78,
+      "timestamp_ms": 1794310200000,
+      "datetime_utc_iso": "2026-11-10T11:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:30:00-05:00",
+      "display_time_cot": "06:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242702092.03,
+        "ETH": 6844879.08,
+        "USDT": 3266.8,
+        "SOL": 276106.38
+      },
+      "prices_usd_raw": {
+        "BTC": 74223.55,
+        "ETH": 2093.31,
+        "USDT": 0.9991,
+        "SOL": 84.44
+      },
+      "sim_second": 23400.0
+    },
+    {
+      "tick_index": 79,
+      "timestamp_ms": 1794310500000,
+      "datetime_utc_iso": "2026-11-10T11:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:35:00-05:00",
+      "display_time_cot": "06:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242577156.14,
+        "ETH": 6840426.66,
+        "USDT": 3266.76,
+        "SOL": 276220.05
+      },
+      "prices_usd_raw": {
+        "BTC": 74185.34,
+        "ETH": 2091.95,
+        "USDT": 0.999,
+        "SOL": 84.47
+      },
+      "sim_second": 23700.0
+    },
+    {
+      "tick_index": 80,
+      "timestamp_ms": 1794310800000,
+      "datetime_utc_iso": "2026-11-10T11:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:40:00-05:00",
+      "display_time_cot": "06:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242681913.13,
+        "ETH": 6836450.94,
+        "USDT": 3266.8,
+        "SOL": 276324.54
+      },
+      "prices_usd_raw": {
+        "BTC": 74217.38,
+        "ETH": 2090.73,
+        "USDT": 0.9991,
+        "SOL": 84.51
+      },
+      "sim_second": 24000.0
+    },
+    {
+      "tick_index": 81,
+      "timestamp_ms": 1794311100000,
+      "datetime_utc_iso": "2026-11-10T11:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:45:00-05:00",
+      "display_time_cot": "06:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242938947.51,
+        "ETH": 6837502.59,
+        "USDT": 3266.81,
+        "SOL": 276481.58
+      },
+      "prices_usd_raw": {
+        "BTC": 74295.98,
+        "ETH": 2091.06,
+        "USDT": 0.9991,
+        "SOL": 84.55
+      },
+      "sim_second": 24300.0
+    },
+    {
+      "tick_index": 82,
+      "timestamp_ms": 1794311400000,
+      "datetime_utc_iso": "2026-11-10T11:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:50:00-05:00",
+      "display_time_cot": "06:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243158282.63,
+        "ETH": 6844590.0,
+        "USDT": 3266.91,
+        "SOL": 276820.99
+      },
+      "prices_usd_raw": {
+        "BTC": 74363.06,
+        "ETH": 2093.22,
+        "USDT": 0.9991,
+        "SOL": 84.66
+      },
+      "sim_second": 24600.0
+    },
+    {
+      "tick_index": 83,
+      "timestamp_ms": 1794311700000,
+      "datetime_utc_iso": "2026-11-10T11:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T06:55:00-05:00",
+      "display_time_cot": "06:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 06:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243044646.79,
+        "ETH": 6841570.57,
+        "USDT": 3266.89,
+        "SOL": 276693.85
+      },
+      "prices_usd_raw": {
+        "BTC": 74328.31,
+        "ETH": 2092.3,
+        "USDT": 0.9991,
+        "SOL": 84.62
+      },
+      "sim_second": 24900.0
+    },
+    {
+      "tick_index": 84,
+      "timestamp_ms": 1794312000000,
+      "datetime_utc_iso": "2026-11-10T12:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:00:00-05:00",
+      "display_time_cot": "07:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243076506.93,
+        "ETH": 6840960.37,
+        "USDT": 3266.87,
+        "SOL": 276666.26
+      },
+      "prices_usd_raw": {
+        "BTC": 74338.05,
+        "ETH": 2092.11,
+        "USDT": 0.9991,
+        "SOL": 84.61
+      },
+      "sim_second": 25200.0
+    },
+    {
+      "tick_index": 85,
+      "timestamp_ms": 1794312300000,
+      "datetime_utc_iso": "2026-11-10T12:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:05:00-05:00",
+      "display_time_cot": "07:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242916007.04,
+        "ETH": 6837281.04,
+        "USDT": 3267.04,
+        "SOL": 276453.02
+      },
+      "prices_usd_raw": {
+        "BTC": 74288.97,
+        "ETH": 2090.99,
+        "USDT": 0.9991,
+        "SOL": 84.55
+      },
+      "sim_second": 25500.0
+    },
+    {
+      "tick_index": 86,
+      "timestamp_ms": 1794312600000,
+      "datetime_utc_iso": "2026-11-10T12:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:10:00-05:00",
+      "display_time_cot": "07:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242844608.12,
+        "ETH": 6833996.65,
+        "USDT": 3266.73,
+        "SOL": 276664.32
+      },
+      "prices_usd_raw": {
+        "BTC": 74267.13,
+        "ETH": 2089.98,
+        "USDT": 0.999,
+        "SOL": 84.61
+      },
+      "sim_second": 25800.0
+    },
+    {
+      "tick_index": 87,
+      "timestamp_ms": 1794312900000,
+      "datetime_utc_iso": "2026-11-10T12:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:15:00-05:00",
+      "display_time_cot": "07:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242897703.11,
+        "ETH": 6834998.81,
+        "USDT": 3266.81,
+        "SOL": 276915.44
+      },
+      "prices_usd_raw": {
+        "BTC": 74283.37,
+        "ETH": 2090.29,
+        "USDT": 0.9991,
+        "SOL": 84.69
+      },
+      "sim_second": 26100.0
+    },
+    {
+      "tick_index": 88,
+      "timestamp_ms": 1794313200000,
+      "datetime_utc_iso": "2026-11-10T12:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:20:00-05:00",
+      "display_time_cot": "07:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242800464.97,
+        "ETH": 6833575.76,
+        "USDT": 3266.78,
+        "SOL": 276834.06
+      },
+      "prices_usd_raw": {
+        "BTC": 74253.63,
+        "ETH": 2089.86,
+        "USDT": 0.9991,
+        "SOL": 84.66
+      },
+      "sim_second": 26400.0
+    },
+    {
+      "tick_index": 89,
+      "timestamp_ms": 1794313500000,
+      "datetime_utc_iso": "2026-11-10T12:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:25:00-05:00",
+      "display_time_cot": "07:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242871767.02,
+        "ETH": 6836727.85,
+        "USDT": 3266.62,
+        "SOL": 276905.78
+      },
+      "prices_usd_raw": {
+        "BTC": 74275.44,
+        "ETH": 2090.82,
+        "USDT": 0.999,
+        "SOL": 84.68
+      },
+      "sim_second": 26700.0
+    },
+    {
+      "tick_index": 90,
+      "timestamp_ms": 1794313800000,
+      "datetime_utc_iso": "2026-11-10T12:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:30:00-05:00",
+      "display_time_cot": "07:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242621232.38,
+        "ETH": 6833135.49,
+        "USDT": 3266.7,
+        "SOL": 276848.35
+      },
+      "prices_usd_raw": {
+        "BTC": 74198.82,
+        "ETH": 2089.72,
+        "USDT": 0.999,
+        "SOL": 84.67
+      },
+      "sim_second": 27000.0
+    },
+    {
+      "tick_index": 91,
+      "timestamp_ms": 1794314100000,
+      "datetime_utc_iso": "2026-11-10T12:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:35:00-05:00",
+      "display_time_cot": "07:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242463470.31,
+        "ETH": 6823530.66,
+        "USDT": 3266.84,
+        "SOL": 276626.17
+      },
+      "prices_usd_raw": {
+        "BTC": 74150.57,
+        "ETH": 2086.78,
+        "USDT": 0.9991,
+        "SOL": 84.6
+      },
+      "sim_second": 27300.0
+    },
+    {
+      "tick_index": 92,
+      "timestamp_ms": 1794314400000,
+      "datetime_utc_iso": "2026-11-10T12:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:40:00-05:00",
+      "display_time_cot": "07:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242469455.2,
+        "ETH": 6819738.85,
+        "USDT": 3266.75,
+        "SOL": 276717.85
+      },
+      "prices_usd_raw": {
+        "BTC": 74152.4,
+        "ETH": 2085.62,
+        "USDT": 0.999,
+        "SOL": 84.63
+      },
+      "sim_second": 27600.0
+    },
+    {
+      "tick_index": 93,
+      "timestamp_ms": 1794314700000,
+      "datetime_utc_iso": "2026-11-10T12:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:45:00-05:00",
+      "display_time_cot": "07:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242408837.21,
+        "ETH": 6821197.52,
+        "USDT": 3266.83,
+        "SOL": 276847.06
+      },
+      "prices_usd_raw": {
+        "BTC": 74133.86,
+        "ETH": 2086.07,
+        "USDT": 0.9991,
+        "SOL": 84.67
+      },
+      "sim_second": 27900.0
+    },
+    {
+      "tick_index": 94,
+      "timestamp_ms": 1794315000000,
+      "datetime_utc_iso": "2026-11-10T12:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:50:00-05:00",
+      "display_time_cot": "07:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242808059.21,
+        "ETH": 6837666.43,
+        "USDT": 3266.93,
+        "SOL": 277320.37
+      },
+      "prices_usd_raw": {
+        "BTC": 74255.95,
+        "ETH": 2091.11,
+        "USDT": 0.9991,
+        "SOL": 84.81
+      },
+      "sim_second": 28200.0
+    },
+    {
+      "tick_index": 95,
+      "timestamp_ms": 1794315300000,
+      "datetime_utc_iso": "2026-11-10T12:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T07:55:00-05:00",
+      "display_time_cot": "07:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 07:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242823333.81,
+        "ETH": 6843143.1,
+        "USDT": 3266.85,
+        "SOL": 277284.58
+      },
+      "prices_usd_raw": {
+        "BTC": 74260.63,
+        "ETH": 2092.78,
+        "USDT": 0.9991,
+        "SOL": 84.8
+      },
+      "sim_second": 28500.0
+    },
+    {
+      "tick_index": 96,
+      "timestamp_ms": 1794315600000,
+      "datetime_utc_iso": "2026-11-10T13:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:00:00-05:00",
+      "display_time_cot": "08:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242991883.69,
+        "ETH": 6856220.96,
+        "USDT": 3266.93,
+        "SOL": 277479.67
+      },
+      "prices_usd_raw": {
+        "BTC": 74312.17,
+        "ETH": 2096.78,
+        "USDT": 0.9991,
+        "SOL": 84.86
+      },
+      "sim_second": 28800.0
+    },
+    {
+      "tick_index": 97,
+      "timestamp_ms": 1794315900000,
+      "datetime_utc_iso": "2026-11-10T13:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:05:00-05:00",
+      "display_time_cot": "08:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242793538.1,
+        "ETH": 6850045.85,
+        "USDT": 3266.95,
+        "SOL": 277272.91
+      },
+      "prices_usd_raw": {
+        "BTC": 74251.51,
+        "ETH": 2094.89,
+        "USDT": 0.9991,
+        "SOL": 84.8
+      },
+      "sim_second": 29100.0
+    },
+    {
+      "tick_index": 98,
+      "timestamp_ms": 1794316200000,
+      "datetime_utc_iso": "2026-11-10T13:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:10:00-05:00",
+      "display_time_cot": "08:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243062690.58,
+        "ETH": 6855761.91,
+        "USDT": 3266.94,
+        "SOL": 277311.05
+      },
+      "prices_usd_raw": {
+        "BTC": 74333.83,
+        "ETH": 2096.64,
+        "USDT": 0.9991,
+        "SOL": 84.81
+      },
+      "sim_second": 29400.0
+    },
+    {
+      "tick_index": 99,
+      "timestamp_ms": 1794316500000,
+      "datetime_utc_iso": "2026-11-10T13:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:15:00-05:00",
+      "display_time_cot": "08:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243044917.2,
+        "ETH": 6854267.8,
+        "USDT": 3266.95,
+        "SOL": 277287.58
+      },
+      "prices_usd_raw": {
+        "BTC": 74328.39,
+        "ETH": 2096.18,
+        "USDT": 0.9991,
+        "SOL": 84.8
+      },
+      "sim_second": 29700.0
+    },
+    {
+      "tick_index": 100,
+      "timestamp_ms": 1794316800000,
+      "datetime_utc_iso": "2026-11-10T13:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:20:00-05:00",
+      "display_time_cot": "08:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242629556.92,
+        "ETH": 6841062.0,
+        "USDT": 3266.84,
+        "SOL": 276672.98
+      },
+      "prices_usd_raw": {
+        "BTC": 74201.36,
+        "ETH": 2092.14,
+        "USDT": 0.9991,
+        "SOL": 84.61
+      },
+      "sim_second": 30000.0
+    },
+    {
+      "tick_index": 101,
+      "timestamp_ms": 1794317100000,
+      "datetime_utc_iso": "2026-11-10T13:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:25:00-05:00",
+      "display_time_cot": "08:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242752340.69,
+        "ETH": 6848420.57,
+        "USDT": 3266.84,
+        "SOL": 276719.57
+      },
+      "prices_usd_raw": {
+        "BTC": 74238.91,
+        "ETH": 2094.4,
+        "USDT": 0.9991,
+        "SOL": 84.63
+      },
+      "sim_second": 30300.0
+    },
+    {
+      "tick_index": 102,
+      "timestamp_ms": 1794317400000,
+      "datetime_utc_iso": "2026-11-10T13:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:30:00-05:00",
+      "display_time_cot": "08:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242303151.6,
+        "ETH": 6816477.6,
+        "USDT": 3266.76,
+        "SOL": 275472.58
+      },
+      "prices_usd_raw": {
+        "BTC": 74101.54,
+        "ETH": 2084.63,
+        "USDT": 0.999,
+        "SOL": 84.25
+      },
+      "sim_second": 30600.0
+    },
+    {
+      "tick_index": 103,
+      "timestamp_ms": 1794317700000,
+      "datetime_utc_iso": "2026-11-10T13:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:35:00-05:00",
+      "display_time_cot": "08:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241518007.14,
+        "ETH": 6745797.8,
+        "USDT": 3266.81,
+        "SOL": 274853.18
+      },
+      "prices_usd_raw": {
+        "BTC": 73861.43,
+        "ETH": 2063.01,
+        "USDT": 0.9991,
+        "SOL": 84.06
+      },
+      "sim_second": 30900.0
+    },
+    {
+      "tick_index": 104,
+      "timestamp_ms": 1794318000000,
+      "datetime_utc_iso": "2026-11-10T13:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:40:00-05:00",
+      "display_time_cot": "08:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241450441.46,
+        "ETH": 6748601.53,
+        "USDT": 3266.94,
+        "SOL": 275048.31
+      },
+      "prices_usd_raw": {
+        "BTC": 73840.77,
+        "ETH": 2063.87,
+        "USDT": 0.9991,
+        "SOL": 84.12
+      },
+      "sim_second": 31200.0
+    },
+    {
+      "tick_index": 105,
+      "timestamp_ms": 1794318300000,
+      "datetime_utc_iso": "2026-11-10T13:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:45:00-05:00",
+      "display_time_cot": "08:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241301436.76,
+        "ETH": 6753055.51,
+        "USDT": 3267.0,
+        "SOL": 274977.45
+      },
+      "prices_usd_raw": {
+        "BTC": 73795.2,
+        "ETH": 2065.23,
+        "USDT": 0.9991,
+        "SOL": 84.09
+      },
+      "sim_second": 31500.0
+    },
+    {
+      "tick_index": 106,
+      "timestamp_ms": 1794318600000,
+      "datetime_utc_iso": "2026-11-10T13:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:50:00-05:00",
+      "display_time_cot": "08:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241685175.99,
+        "ETH": 6777143.95,
+        "USDT": 3266.66,
+        "SOL": 275840.37
+      },
+      "prices_usd_raw": {
+        "BTC": 73912.55,
+        "ETH": 2072.6,
+        "USDT": 0.999,
+        "SOL": 84.36
+      },
+      "sim_second": 31800.0
+    },
+    {
+      "tick_index": 107,
+      "timestamp_ms": 1794318900000,
+      "datetime_utc_iso": "2026-11-10T13:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T08:55:00-05:00",
+      "display_time_cot": "08:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 08:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241300902.68,
+        "ETH": 6759518.7,
+        "USDT": 3266.84,
+        "SOL": 275112.1
+      },
+      "prices_usd_raw": {
+        "BTC": 73795.03,
+        "ETH": 2067.21,
+        "USDT": 0.9991,
+        "SOL": 84.14
+      },
+      "sim_second": 32100.0
+    },
+    {
+      "tick_index": 108,
+      "timestamp_ms": 1794319200000,
+      "datetime_utc_iso": "2026-11-10T14:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:00:00-05:00",
+      "display_time_cot": "09:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241001829.79,
+        "ETH": 6752217.52,
+        "USDT": 3266.89,
+        "SOL": 274930.41
+      },
+      "prices_usd_raw": {
+        "BTC": 73703.57,
+        "ETH": 2064.97,
+        "USDT": 0.9991,
+        "SOL": 84.08
+      },
+      "sim_second": 32400.0
+    },
+    {
+      "tick_index": 109,
+      "timestamp_ms": 1794319500000,
+      "datetime_utc_iso": "2026-11-10T14:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:05:00-05:00",
+      "display_time_cot": "09:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241173777.67,
+        "ETH": 6757616.77,
+        "USDT": 3266.73,
+        "SOL": 274966.02
+      },
+      "prices_usd_raw": {
+        "BTC": 73756.16,
+        "ETH": 2066.63,
+        "USDT": 0.999,
+        "SOL": 84.09
+      },
+      "sim_second": 32700.0
+    },
+    {
+      "tick_index": 110,
+      "timestamp_ms": 1794319800000,
+      "datetime_utc_iso": "2026-11-10T14:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:10:00-05:00",
+      "display_time_cot": "09:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241347002.54,
+        "ETH": 6760907.36,
+        "USDT": 3266.75,
+        "SOL": 275235.83
+      },
+      "prices_usd_raw": {
+        "BTC": 73809.13,
+        "ETH": 2067.63,
+        "USDT": 0.999,
+        "SOL": 84.17
+      },
+      "sim_second": 33000.0
+    },
+    {
+      "tick_index": 111,
+      "timestamp_ms": 1794320100000,
+      "datetime_utc_iso": "2026-11-10T14:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:15:00-05:00",
+      "display_time_cot": "09:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241521451.61,
+        "ETH": 6758279.98,
+        "USDT": 3266.81,
+        "SOL": 274945.05
+      },
+      "prices_usd_raw": {
+        "BTC": 73862.48,
+        "ETH": 2066.83,
+        "USDT": 0.9991,
+        "SOL": 84.08
+      },
+      "sim_second": 33300.0
+    },
+    {
+      "tick_index": 112,
+      "timestamp_ms": 1794320400000,
+      "datetime_utc_iso": "2026-11-10T14:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:20:00-05:00",
+      "display_time_cot": "09:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241252408.22,
+        "ETH": 6753246.81,
+        "USDT": 3267.01,
+        "SOL": 274358.24
+      },
+      "prices_usd_raw": {
+        "BTC": 73780.2,
+        "ETH": 2065.29,
+        "USDT": 0.9991,
+        "SOL": 83.9
+      },
+      "sim_second": 33600.0
+    },
+    {
+      "tick_index": 113,
+      "timestamp_ms": 1794320700000,
+      "datetime_utc_iso": "2026-11-10T14:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:25:00-05:00",
+      "display_time_cot": "09:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240859925.58,
+        "ETH": 6743241.24,
+        "USDT": 3266.81,
+        "SOL": 273665.69
+      },
+      "prices_usd_raw": {
+        "BTC": 73660.17,
+        "ETH": 2062.23,
+        "USDT": 0.9991,
+        "SOL": 83.69
+      },
+      "sim_second": 33900.0
+    },
+    {
+      "tick_index": 114,
+      "timestamp_ms": 1794321000000,
+      "datetime_utc_iso": "2026-11-10T14:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:30:00-05:00",
+      "display_time_cot": "09:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241001526.41,
+        "ETH": 6743735.08,
+        "USDT": 3267.02,
+        "SOL": 273393.17
+      },
+      "prices_usd_raw": {
+        "BTC": 73703.48,
+        "ETH": 2062.38,
+        "USDT": 0.9991,
+        "SOL": 83.61
+      },
+      "sim_second": 34200.0
+    },
+    {
+      "tick_index": 115,
+      "timestamp_ms": 1794321300000,
+      "datetime_utc_iso": "2026-11-10T14:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:35:00-05:00",
+      "display_time_cot": "09:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241793553.15,
+        "ETH": 6773461.51,
+        "USDT": 3267.09,
+        "SOL": 274398.9
+      },
+      "prices_usd_raw": {
+        "BTC": 73945.7,
+        "ETH": 2071.47,
+        "USDT": 0.9991,
+        "SOL": 83.92
+      },
+      "sim_second": 34500.0
+    },
+    {
+      "tick_index": 116,
+      "timestamp_ms": 1794321600000,
+      "datetime_utc_iso": "2026-11-10T14:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:40:00-05:00",
+      "display_time_cot": "09:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242607513.3,
+        "ETH": 6801252.12,
+        "USDT": 3266.92,
+        "SOL": 275875.99
+      },
+      "prices_usd_raw": {
+        "BTC": 74194.62,
+        "ETH": 2079.97,
+        "USDT": 0.9991,
+        "SOL": 84.37
+      },
+      "sim_second": 34800.0
+    },
+    {
+      "tick_index": 117,
+      "timestamp_ms": 1794321900000,
+      "datetime_utc_iso": "2026-11-10T14:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:45:00-05:00",
+      "display_time_cot": "09:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242606133.79,
+        "ETH": 6795597.1,
+        "USDT": 3267.0,
+        "SOL": 275772.69
+      },
+      "prices_usd_raw": {
+        "BTC": 74194.2,
+        "ETH": 2078.24,
+        "USDT": 0.9991,
+        "SOL": 84.34
+      },
+      "sim_second": 35100.0
+    },
+    {
+      "tick_index": 118,
+      "timestamp_ms": 1794322200000,
+      "datetime_utc_iso": "2026-11-10T14:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:50:00-05:00",
+      "display_time_cot": "09:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241946426.02,
+        "ETH": 6775178.96,
+        "USDT": 3266.89,
+        "SOL": 274123.88
+      },
+      "prices_usd_raw": {
+        "BTC": 73992.45,
+        "ETH": 2072.0,
+        "USDT": 0.9991,
+        "SOL": 83.83
+      },
+      "sim_second": 35400.0
+    },
+    {
+      "tick_index": 119,
+      "timestamp_ms": 1794322500000,
+      "datetime_utc_iso": "2026-11-10T14:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T09:55:00-05:00",
+      "display_time_cot": "09:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 09:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242426731.73,
+        "ETH": 6790042.79,
+        "USDT": 3266.91,
+        "SOL": 274588.05
+      },
+      "prices_usd_raw": {
+        "BTC": 74139.34,
+        "ETH": 2076.54,
+        "USDT": 0.9991,
+        "SOL": 83.97
+      },
+      "sim_second": 35700.0
+    },
+    {
+      "tick_index": 120,
+      "timestamp_ms": 1794322800000,
+      "datetime_utc_iso": "2026-11-10T15:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:00:00-05:00",
+      "display_time_cot": "10:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243047041.67,
+        "ETH": 6803534.95,
+        "USDT": 3266.85,
+        "SOL": 275454.16
+      },
+      "prices_usd_raw": {
+        "BTC": 74329.04,
+        "ETH": 2080.67,
+        "USDT": 0.9991,
+        "SOL": 84.24
+      },
+      "sim_second": 36000.0
+    },
+    {
+      "tick_index": 121,
+      "timestamp_ms": 1794323100000,
+      "datetime_utc_iso": "2026-11-10T15:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:05:00-05:00",
+      "display_time_cot": "10:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243797406.17,
+        "ETH": 6816867.19,
+        "USDT": 3267.17,
+        "SOL": 276857.55
+      },
+      "prices_usd_raw": {
+        "BTC": 74558.52,
+        "ETH": 2084.75,
+        "USDT": 0.9992,
+        "SOL": 84.67
+      },
+      "sim_second": 36300.0
+    },
+    {
+      "tick_index": 122,
+      "timestamp_ms": 1794323400000,
+      "datetime_utc_iso": "2026-11-10T15:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:10:00-05:00",
+      "display_time_cot": "10:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243706059.83,
+        "ETH": 6808612.78,
+        "USDT": 3266.91,
+        "SOL": 277020.72
+      },
+      "prices_usd_raw": {
+        "BTC": 74530.58,
+        "ETH": 2082.22,
+        "USDT": 0.9991,
+        "SOL": 84.72
+      },
+      "sim_second": 36600.0
+    },
+    {
+      "tick_index": 123,
+      "timestamp_ms": 1794323700000,
+      "datetime_utc_iso": "2026-11-10T15:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:15:00-05:00",
+      "display_time_cot": "10:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243283299.96,
+        "ETH": 6786188.89,
+        "USDT": 3266.89,
+        "SOL": 276244.2
+      },
+      "prices_usd_raw": {
+        "BTC": 74401.29,
+        "ETH": 2075.36,
+        "USDT": 0.9991,
+        "SOL": 84.48
+      },
+      "sim_second": 36900.0
+    },
+    {
+      "tick_index": 124,
+      "timestamp_ms": 1794324000000,
+      "datetime_utc_iso": "2026-11-10T15:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:20:00-05:00",
+      "display_time_cot": "10:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 243315590.63,
+        "ETH": 6782423.24,
+        "USDT": 3266.98,
+        "SOL": 275530.82
+      },
+      "prices_usd_raw": {
+        "BTC": 74411.17,
+        "ETH": 2074.21,
+        "USDT": 0.9991,
+        "SOL": 84.26
+      },
+      "sim_second": 37200.0
+    },
+    {
+      "tick_index": 125,
+      "timestamp_ms": 1794324300000,
+      "datetime_utc_iso": "2026-11-10T15:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:25:00-05:00",
+      "display_time_cot": "10:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242999700.75,
+        "ETH": 6771049.46,
+        "USDT": 3266.91,
+        "SOL": 274586.93
+      },
+      "prices_usd_raw": {
+        "BTC": 74314.56,
+        "ETH": 2070.73,
+        "USDT": 0.9991,
+        "SOL": 83.97
+      },
+      "sim_second": 37500.0
+    },
+    {
+      "tick_index": 126,
+      "timestamp_ms": 1794324600000,
+      "datetime_utc_iso": "2026-11-10T15:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:30:00-05:00",
+      "display_time_cot": "10:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 242133764.12,
+        "ETH": 6748321.63,
+        "USDT": 3266.96,
+        "SOL": 273530.49
+      },
+      "prices_usd_raw": {
+        "BTC": 74049.74,
+        "ETH": 2063.78,
+        "USDT": 0.9991,
+        "SOL": 83.65
+      },
+      "sim_second": 37800.0
+    },
+    {
+      "tick_index": 127,
+      "timestamp_ms": 1794324900000,
+      "datetime_utc_iso": "2026-11-10T15:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:35:00-05:00",
+      "display_time_cot": "10:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240995895.21,
+        "ETH": 6707600.85,
+        "USDT": 3267.04,
+        "SOL": 271607.82
+      },
+      "prices_usd_raw": {
+        "BTC": 73701.76,
+        "ETH": 2051.33,
+        "USDT": 0.9991,
+        "SOL": 83.06
+      },
+      "sim_second": 38100.0
+    },
+    {
+      "tick_index": 128,
+      "timestamp_ms": 1794325200000,
+      "datetime_utc_iso": "2026-11-10T15:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:40:00-05:00",
+      "display_time_cot": "10:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239611752.28,
+        "ETH": 6653859.87,
+        "USDT": 3267.21,
+        "SOL": 270325.36
+      },
+      "prices_usd_raw": {
+        "BTC": 73278.45,
+        "ETH": 2034.89,
+        "USDT": 0.9992,
+        "SOL": 82.67
+      },
+      "sim_second": 38400.0
+    },
+    {
+      "tick_index": 129,
+      "timestamp_ms": 1794325500000,
+      "datetime_utc_iso": "2026-11-10T15:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:45:00-05:00",
+      "display_time_cot": "10:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238563569.5,
+        "ETH": 6576559.3,
+        "USDT": 3267.32,
+        "SOL": 267092.18
+      },
+      "prices_usd_raw": {
+        "BTC": 72957.9,
+        "ETH": 2011.25,
+        "USDT": 0.9992,
+        "SOL": 81.68
+      },
+      "sim_second": 38700.0
+    },
+    {
+      "tick_index": 130,
+      "timestamp_ms": 1794325800000,
+      "datetime_utc_iso": "2026-11-10T15:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:50:00-05:00",
+      "display_time_cot": "10:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239485397.1,
+        "ETH": 6607537.05,
+        "USDT": 3267.5,
+        "SOL": 268662.18
+      },
+      "prices_usd_raw": {
+        "BTC": 73239.81,
+        "ETH": 2020.73,
+        "USDT": 0.9993,
+        "SOL": 82.16
+      },
+      "sim_second": 39000.0
+    },
+    {
+      "tick_index": 131,
+      "timestamp_ms": 1794326100000,
+      "datetime_utc_iso": "2026-11-10T15:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T10:55:00-05:00",
+      "display_time_cot": "10:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 10:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239226968.68,
+        "ETH": 6611209.7,
+        "USDT": 3267.5,
+        "SOL": 268601.28
+      },
+      "prices_usd_raw": {
+        "BTC": 73160.78,
+        "ETH": 2021.85,
+        "USDT": 0.9993,
+        "SOL": 82.14
+      },
+      "sim_second": 39300.0
+    },
+    {
+      "tick_index": 132,
+      "timestamp_ms": 1794326400000,
+      "datetime_utc_iso": "2026-11-10T16:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:00:00-05:00",
+      "display_time_cot": "11:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239386952.99,
+        "ETH": 6621171.96,
+        "USDT": 3267.48,
+        "SOL": 269110.3
+      },
+      "prices_usd_raw": {
+        "BTC": 73209.71,
+        "ETH": 2024.9,
+        "USDT": 0.9993,
+        "SOL": 82.3
+      },
+      "sim_second": 39600.0
+    },
+    {
+      "tick_index": 133,
+      "timestamp_ms": 1794326700000,
+      "datetime_utc_iso": "2026-11-10T16:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:05:00-05:00",
+      "display_time_cot": "11:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239395614.32,
+        "ETH": 6629727.42,
+        "USDT": 3267.29,
+        "SOL": 268718.82
+      },
+      "prices_usd_raw": {
+        "BTC": 73212.35,
+        "ETH": 2027.51,
+        "USDT": 0.9992,
+        "SOL": 82.18
+      },
+      "sim_second": 39900.0
+    },
+    {
+      "tick_index": 134,
+      "timestamp_ms": 1794327000000,
+      "datetime_utc_iso": "2026-11-10T16:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:10:00-05:00",
+      "display_time_cot": "11:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239427193.07,
+        "ETH": 6629813.75,
+        "USDT": 3267.41,
+        "SOL": 268640.55
+      },
+      "prices_usd_raw": {
+        "BTC": 73222.01,
+        "ETH": 2027.54,
+        "USDT": 0.9992,
+        "SOL": 82.16
+      },
+      "sim_second": 40200.0
+    },
+    {
+      "tick_index": 135,
+      "timestamp_ms": 1794327300000,
+      "datetime_utc_iso": "2026-11-10T16:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:15:00-05:00",
+      "display_time_cot": "11:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239666991.28,
+        "ETH": 6630059.6,
+        "USDT": 3267.51,
+        "SOL": 268842.15
+      },
+      "prices_usd_raw": {
+        "BTC": 73295.35,
+        "ETH": 2027.62,
+        "USDT": 0.9993,
+        "SOL": 82.22
+      },
+      "sim_second": 40500.0
+    },
+    {
+      "tick_index": 136,
+      "timestamp_ms": 1794327600000,
+      "datetime_utc_iso": "2026-11-10T16:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:20:00-05:00",
+      "display_time_cot": "11:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240213605.49,
+        "ETH": 6651668.59,
+        "USDT": 3267.33,
+        "SOL": 269302.54
+      },
+      "prices_usd_raw": {
+        "BTC": 73462.51,
+        "ETH": 2034.22,
+        "USDT": 0.9992,
+        "SOL": 82.36
+      },
+      "sim_second": 40800.0
+    },
+    {
+      "tick_index": 137,
+      "timestamp_ms": 1794327900000,
+      "datetime_utc_iso": "2026-11-10T16:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:25:00-05:00",
+      "display_time_cot": "11:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239659127.26,
+        "ETH": 6630777.65,
+        "USDT": 3267.47,
+        "SOL": 268982.57
+      },
+      "prices_usd_raw": {
+        "BTC": 73292.94,
+        "ETH": 2027.84,
+        "USDT": 0.9993,
+        "SOL": 82.26
+      },
+      "sim_second": 41100.0
+    },
+    {
+      "tick_index": 138,
+      "timestamp_ms": 1794328200000,
+      "datetime_utc_iso": "2026-11-10T16:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:30:00-05:00",
+      "display_time_cot": "11:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239363496.51,
+        "ETH": 6619779.96,
+        "USDT": 3267.62,
+        "SOL": 268669.44
+      },
+      "prices_usd_raw": {
+        "BTC": 73202.53,
+        "ETH": 2024.47,
+        "USDT": 0.9993,
+        "SOL": 82.16
+      },
+      "sim_second": 41400.0
+    },
+    {
+      "tick_index": 139,
+      "timestamp_ms": 1794328500000,
+      "datetime_utc_iso": "2026-11-10T16:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:35:00-05:00",
+      "display_time_cot": "11:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238697813.46,
+        "ETH": 6592296.57,
+        "USDT": 3267.68,
+        "SOL": 267476.67
+      },
+      "prices_usd_raw": {
+        "BTC": 72998.95,
+        "ETH": 2016.07,
+        "USDT": 0.9993,
+        "SOL": 81.8
+      },
+      "sim_second": 41700.0
+    },
+    {
+      "tick_index": 140,
+      "timestamp_ms": 1794328800000,
+      "datetime_utc_iso": "2026-11-10T16:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:40:00-05:00",
+      "display_time_cot": "11:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238282700.8,
+        "ETH": 6587757.58,
+        "USDT": 3267.69,
+        "SOL": 267853.09
+      },
+      "prices_usd_raw": {
+        "BTC": 72872.0,
+        "ETH": 2014.68,
+        "USDT": 0.9993,
+        "SOL": 81.92
+      },
+      "sim_second": 42000.0
+    },
+    {
+      "tick_index": 141,
+      "timestamp_ms": 1794329100000,
+      "datetime_utc_iso": "2026-11-10T16:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:45:00-05:00",
+      "display_time_cot": "11:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238957785.15,
+        "ETH": 6608678.11,
+        "USDT": 3267.37,
+        "SOL": 268766.53
+      },
+      "prices_usd_raw": {
+        "BTC": 73078.46,
+        "ETH": 2021.08,
+        "USDT": 0.9992,
+        "SOL": 82.19
+      },
+      "sim_second": 42300.0
+    },
+    {
+      "tick_index": 142,
+      "timestamp_ms": 1794329400000,
+      "datetime_utc_iso": "2026-11-10T16:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:50:00-05:00",
+      "display_time_cot": "11:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238506692.84,
+        "ETH": 6600949.64,
+        "USDT": 3267.76,
+        "SOL": 267848.88
+      },
+      "prices_usd_raw": {
+        "BTC": 72940.5,
+        "ETH": 2018.71,
+        "USDT": 0.9994,
+        "SOL": 81.91
+      },
+      "sim_second": 42600.0
+    },
+    {
+      "tick_index": 143,
+      "timestamp_ms": 1794329700000,
+      "datetime_utc_iso": "2026-11-10T16:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T11:55:00-05:00",
+      "display_time_cot": "11:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 11:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238289668.43,
+        "ETH": 6597099.14,
+        "USDT": 3267.37,
+        "SOL": 267860.23
+      },
+      "prices_usd_raw": {
+        "BTC": 72874.13,
+        "ETH": 2017.54,
+        "USDT": 0.9992,
+        "SOL": 81.92
+      },
+      "sim_second": 42900.0
+    },
+    {
+      "tick_index": 144,
+      "timestamp_ms": 1794330000000,
+      "datetime_utc_iso": "2026-11-10T17:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:00:00-05:00",
+      "display_time_cot": "12:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238177737.01,
+        "ETH": 6594778.09,
+        "USDT": 3267.71,
+        "SOL": 267762.78
+      },
+      "prices_usd_raw": {
+        "BTC": 72839.9,
+        "ETH": 2016.83,
+        "USDT": 0.9993,
+        "SOL": 81.89
+      },
+      "sim_second": 43200.0
+    },
+    {
+      "tick_index": 145,
+      "timestamp_ms": 1794330300000,
+      "datetime_utc_iso": "2026-11-10T17:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:05:00-05:00",
+      "display_time_cot": "12:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238478275.4,
+        "ETH": 6603334.65,
+        "USDT": 3267.82,
+        "SOL": 268273.26
+      },
+      "prices_usd_raw": {
+        "BTC": 72931.81,
+        "ETH": 2019.44,
+        "USDT": 0.9994,
+        "SOL": 82.04
+      },
+      "sim_second": 43500.0
+    },
+    {
+      "tick_index": 146,
+      "timestamp_ms": 1794330600000,
+      "datetime_utc_iso": "2026-11-10T17:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:10:00-05:00",
+      "display_time_cot": "12:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238248426.59,
+        "ETH": 6597820.52,
+        "USDT": 3267.83,
+        "SOL": 267729.26
+      },
+      "prices_usd_raw": {
+        "BTC": 72861.52,
+        "ETH": 2017.76,
+        "USDT": 0.9994,
+        "SOL": 81.88
+      },
+      "sim_second": 43800.0
+    },
+    {
+      "tick_index": 147,
+      "timestamp_ms": 1794330900000,
+      "datetime_utc_iso": "2026-11-10T17:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:15:00-05:00",
+      "display_time_cot": "12:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238484515.25,
+        "ETH": 6609070.92,
+        "USDT": 3267.4,
+        "SOL": 268619.59
+      },
+      "prices_usd_raw": {
+        "BTC": 72933.72,
+        "ETH": 2021.2,
+        "USDT": 0.9992,
+        "SOL": 82.15
+      },
+      "sim_second": 44100.0
+    },
+    {
+      "tick_index": 148,
+      "timestamp_ms": 1794331200000,
+      "datetime_utc_iso": "2026-11-10T17:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:20:00-05:00",
+      "display_time_cot": "12:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238817750.07,
+        "ETH": 6623431.84,
+        "USDT": 3267.32,
+        "SOL": 269184.9
+      },
+      "prices_usd_raw": {
+        "BTC": 73035.63,
+        "ETH": 2025.59,
+        "USDT": 0.9992,
+        "SOL": 82.32
+      },
+      "sim_second": 44400.0
+    },
+    {
+      "tick_index": 149,
+      "timestamp_ms": 1794331500000,
+      "datetime_utc_iso": "2026-11-10T17:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:25:00-05:00",
+      "display_time_cot": "12:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238504984.83,
+        "ETH": 6611356.83,
+        "USDT": 3267.39,
+        "SOL": 268912.59
+      },
+      "prices_usd_raw": {
+        "BTC": 72939.98,
+        "ETH": 2021.9,
+        "USDT": 0.9992,
+        "SOL": 82.24
+      },
+      "sim_second": 44700.0
+    },
+    {
+      "tick_index": 150,
+      "timestamp_ms": 1794331800000,
+      "datetime_utc_iso": "2026-11-10T17:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:30:00-05:00",
+      "display_time_cot": "12:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238647002.54,
+        "ETH": 6614714.06,
+        "USDT": 3267.56,
+        "SOL": 269190.99
+      },
+      "prices_usd_raw": {
+        "BTC": 72983.41,
+        "ETH": 2022.92,
+        "USDT": 0.9993,
+        "SOL": 82.32
+      },
+      "sim_second": 45000.0
+    },
+    {
+      "tick_index": 151,
+      "timestamp_ms": 1794332100000,
+      "datetime_utc_iso": "2026-11-10T17:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:35:00-05:00",
+      "display_time_cot": "12:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238899501.22,
+        "ETH": 6623193.36,
+        "USDT": 3267.63,
+        "SOL": 269483.9
+      },
+      "prices_usd_raw": {
+        "BTC": 73060.63,
+        "ETH": 2025.52,
+        "USDT": 0.9993,
+        "SOL": 82.41
+      },
+      "sim_second": 45300.0
+    },
+    {
+      "tick_index": 152,
+      "timestamp_ms": 1794332400000,
+      "datetime_utc_iso": "2026-11-10T17:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:40:00-05:00",
+      "display_time_cot": "12:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238049042.36,
+        "ETH": 6593849.72,
+        "USDT": 3267.71,
+        "SOL": 267988.99
+      },
+      "prices_usd_raw": {
+        "BTC": 72800.54,
+        "ETH": 2016.54,
+        "USDT": 0.9993,
+        "SOL": 81.96
+      },
+      "sim_second": 45600.0
+    },
+    {
+      "tick_index": 153,
+      "timestamp_ms": 1794332700000,
+      "datetime_utc_iso": "2026-11-10T17:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:45:00-05:00",
+      "display_time_cot": "12:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238426933.4,
+        "ETH": 6601810.86,
+        "USDT": 3267.66,
+        "SOL": 268340.42
+      },
+      "prices_usd_raw": {
+        "BTC": 72916.11,
+        "ETH": 2018.98,
+        "USDT": 0.9993,
+        "SOL": 82.06
+      },
+      "sim_second": 45900.0
+    },
+    {
+      "tick_index": 154,
+      "timestamp_ms": 1794333000000,
+      "datetime_utc_iso": "2026-11-10T17:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:50:00-05:00",
+      "display_time_cot": "12:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 238756493.93,
+        "ETH": 6614189.19,
+        "USDT": 3267.68,
+        "SOL": 268530.88
+      },
+      "prices_usd_raw": {
+        "BTC": 73016.9,
+        "ETH": 2022.76,
+        "USDT": 0.9993,
+        "SOL": 82.12
+      },
+      "sim_second": 46200.0
+    },
+    {
+      "tick_index": 155,
+      "timestamp_ms": 1794333300000,
+      "datetime_utc_iso": "2026-11-10T17:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T12:55:00-05:00",
+      "display_time_cot": "12:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 12:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239136069.98,
+        "ETH": 6627627.0,
+        "USDT": 3267.55,
+        "SOL": 269073.82
+      },
+      "prices_usd_raw": {
+        "BTC": 73132.98,
+        "ETH": 2026.87,
+        "USDT": 0.9993,
+        "SOL": 82.29
+      },
+      "sim_second": 46500.0
+    },
+    {
+      "tick_index": 156,
+      "timestamp_ms": 1794333600000,
+      "datetime_utc_iso": "2026-11-10T18:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:00:00-05:00",
+      "display_time_cot": "13:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239389124.23,
+        "ETH": 6627203.32,
+        "USDT": 3267.6,
+        "SOL": 268990.28
+      },
+      "prices_usd_raw": {
+        "BTC": 73210.37,
+        "ETH": 2026.74,
+        "USDT": 0.9993,
+        "SOL": 82.26
+      },
+      "sim_second": 46800.0
+    },
+    {
+      "tick_index": 157,
+      "timestamp_ms": 1794333900000,
+      "datetime_utc_iso": "2026-11-10T18:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:05:00-05:00",
+      "display_time_cot": "13:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239592243.27,
+        "ETH": 6632244.95,
+        "USDT": 3267.5,
+        "SOL": 269249.45
+      },
+      "prices_usd_raw": {
+        "BTC": 73272.49,
+        "ETH": 2028.28,
+        "USDT": 0.9993,
+        "SOL": 82.34
+      },
+      "sim_second": 47100.0
+    },
+    {
+      "tick_index": 158,
+      "timestamp_ms": 1794334200000,
+      "datetime_utc_iso": "2026-11-10T18:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:10:00-05:00",
+      "display_time_cot": "13:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239489037.5,
+        "ETH": 6626489.57,
+        "USDT": 3267.58,
+        "SOL": 269167.02
+      },
+      "prices_usd_raw": {
+        "BTC": 73240.93,
+        "ETH": 2026.52,
+        "USDT": 0.9993,
+        "SOL": 82.32
+      },
+      "sim_second": 47400.0
+    },
+    {
+      "tick_index": 159,
+      "timestamp_ms": 1794334500000,
+      "datetime_utc_iso": "2026-11-10T18:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:15:00-05:00",
+      "display_time_cot": "13:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239145612.54,
+        "ETH": 6616457.66,
+        "USDT": 3267.5,
+        "SOL": 268749.21
+      },
+      "prices_usd_raw": {
+        "BTC": 73135.9,
+        "ETH": 2023.46,
+        "USDT": 0.9993,
+        "SOL": 82.19
+      },
+      "sim_second": 47700.0
+    },
+    {
+      "tick_index": 160,
+      "timestamp_ms": 1794334800000,
+      "datetime_utc_iso": "2026-11-10T18:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:20:00-05:00",
+      "display_time_cot": "13:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239376511.88,
+        "ETH": 6635183.26,
+        "USDT": 3267.48,
+        "SOL": 269569.66
+      },
+      "prices_usd_raw": {
+        "BTC": 73206.51,
+        "ETH": 2029.18,
+        "USDT": 0.9993,
+        "SOL": 82.44
+      },
+      "sim_second": 48000.0
+    },
+    {
+      "tick_index": 161,
+      "timestamp_ms": 1794335100000,
+      "datetime_utc_iso": "2026-11-10T18:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:25:00-05:00",
+      "display_time_cot": "13:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239256652.62,
+        "ETH": 6628303.49,
+        "USDT": 3267.39,
+        "SOL": 269769.85
+      },
+      "prices_usd_raw": {
+        "BTC": 73169.86,
+        "ETH": 2027.08,
+        "USDT": 0.9992,
+        "SOL": 82.5
+      },
+      "sim_second": 48300.0
+    },
+    {
+      "tick_index": 162,
+      "timestamp_ms": 1794335400000,
+      "datetime_utc_iso": "2026-11-10T18:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:30:00-05:00",
+      "display_time_cot": "13:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239525835.38,
+        "ETH": 6639353.47,
+        "USDT": 3267.48,
+        "SOL": 270328.17
+      },
+      "prices_usd_raw": {
+        "BTC": 73252.18,
+        "ETH": 2030.46,
+        "USDT": 0.9993,
+        "SOL": 82.67
+      },
+      "sim_second": 48600.0
+    },
+    {
+      "tick_index": 163,
+      "timestamp_ms": 1794335700000,
+      "datetime_utc_iso": "2026-11-10T18:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:35:00-05:00",
+      "display_time_cot": "13:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240062192.48,
+        "ETH": 6667490.58,
+        "USDT": 3267.49,
+        "SOL": 271154.98
+      },
+      "prices_usd_raw": {
+        "BTC": 73416.21,
+        "ETH": 2039.06,
+        "USDT": 0.9993,
+        "SOL": 82.93
+      },
+      "sim_second": 48900.0
+    },
+    {
+      "tick_index": 164,
+      "timestamp_ms": 1794336000000,
+      "datetime_utc_iso": "2026-11-10T18:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:40:00-05:00",
+      "display_time_cot": "13:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240519060.31,
+        "ETH": 6688544.74,
+        "USDT": 3267.4,
+        "SOL": 271845.62
+      },
+      "prices_usd_raw": {
+        "BTC": 73555.93,
+        "ETH": 2045.5,
+        "USDT": 0.9992,
+        "SOL": 83.14
+      },
+      "sim_second": 49200.0
+    },
+    {
+      "tick_index": 165,
+      "timestamp_ms": 1794336300000,
+      "datetime_utc_iso": "2026-11-10T18:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:45:00-05:00",
+      "display_time_cot": "13:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240308011.95,
+        "ETH": 6679971.77,
+        "USDT": 3267.3,
+        "SOL": 271579.93
+      },
+      "prices_usd_raw": {
+        "BTC": 73491.39,
+        "ETH": 2042.88,
+        "USDT": 0.9992,
+        "SOL": 83.06
+      },
+      "sim_second": 49500.0
+    },
+    {
+      "tick_index": 166,
+      "timestamp_ms": 1794336600000,
+      "datetime_utc_iso": "2026-11-10T18:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:50:00-05:00",
+      "display_time_cot": "13:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239994457.8,
+        "ETH": 6669562.6,
+        "USDT": 3267.37,
+        "SOL": 270878.08
+      },
+      "prices_usd_raw": {
+        "BTC": 73395.49,
+        "ETH": 2039.7,
+        "USDT": 0.9992,
+        "SOL": 82.84
+      },
+      "sim_second": 49800.0
+    },
+    {
+      "tick_index": 167,
+      "timestamp_ms": 1794336900000,
+      "datetime_utc_iso": "2026-11-10T18:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T13:55:00-05:00",
+      "display_time_cot": "13:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 13:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240274315.08,
+        "ETH": 6686398.33,
+        "USDT": 3267.38,
+        "SOL": 271366.69
+      },
+      "prices_usd_raw": {
+        "BTC": 73481.08,
+        "ETH": 2044.85,
+        "USDT": 0.9992,
+        "SOL": 82.99
+      },
+      "sim_second": 50100.0
+    },
+    {
+      "tick_index": 168,
+      "timestamp_ms": 1794337200000,
+      "datetime_utc_iso": "2026-11-10T19:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:00:00-05:00",
+      "display_time_cot": "14:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240062033.35,
+        "ETH": 6677993.94,
+        "USDT": 3267.44,
+        "SOL": 271075.67
+      },
+      "prices_usd_raw": {
+        "BTC": 73416.16,
+        "ETH": 2042.27,
+        "USDT": 0.9993,
+        "SOL": 82.9
+      },
+      "sim_second": 50400.0
+    },
+    {
+      "tick_index": 169,
+      "timestamp_ms": 1794337500000,
+      "datetime_utc_iso": "2026-11-10T19:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:05:00-05:00",
+      "display_time_cot": "14:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239884274.46,
+        "ETH": 6678797.53,
+        "USDT": 3267.33,
+        "SOL": 271119.82
+      },
+      "prices_usd_raw": {
+        "BTC": 73361.8,
+        "ETH": 2042.52,
+        "USDT": 0.9992,
+        "SOL": 82.91
+      },
+      "sim_second": 50700.0
+    },
+    {
+      "tick_index": 170,
+      "timestamp_ms": 1794337800000,
+      "datetime_utc_iso": "2026-11-10T19:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:10:00-05:00",
+      "display_time_cot": "14:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239929786.8,
+        "ETH": 6679846.46,
+        "USDT": 3267.41,
+        "SOL": 270913.33
+      },
+      "prices_usd_raw": {
+        "BTC": 73375.72,
+        "ETH": 2042.84,
+        "USDT": 0.9992,
+        "SOL": 82.85
+      },
+      "sim_second": 51000.0
+    },
+    {
+      "tick_index": 171,
+      "timestamp_ms": 1794338100000,
+      "datetime_utc_iso": "2026-11-10T19:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:15:00-05:00",
+      "display_time_cot": "14:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239683663.67,
+        "ETH": 6670820.97,
+        "USDT": 3267.44,
+        "SOL": 270389.7
+      },
+      "prices_usd_raw": {
+        "BTC": 73300.45,
+        "ETH": 2040.08,
+        "USDT": 0.9993,
+        "SOL": 82.69
+      },
+      "sim_second": 51300.0
+    },
+    {
+      "tick_index": 172,
+      "timestamp_ms": 1794338400000,
+      "datetime_utc_iso": "2026-11-10T19:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:20:00-05:00",
+      "display_time_cot": "14:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239918401.63,
+        "ETH": 6672972.25,
+        "USDT": 3267.44,
+        "SOL": 270666.04
+      },
+      "prices_usd_raw": {
+        "BTC": 73372.23,
+        "ETH": 2040.74,
+        "USDT": 0.9993,
+        "SOL": 82.78
+      },
+      "sim_second": 51600.0
+    },
+    {
+      "tick_index": 173,
+      "timestamp_ms": 1794338700000,
+      "datetime_utc_iso": "2026-11-10T19:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:25:00-05:00",
+      "display_time_cot": "14:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239743125.33,
+        "ETH": 6668226.33,
+        "USDT": 3267.44,
+        "SOL": 270120.43
+      },
+      "prices_usd_raw": {
+        "BTC": 73318.63,
+        "ETH": 2039.29,
+        "USDT": 0.9993,
+        "SOL": 82.61
+      },
+      "sim_second": 51900.0
+    },
+    {
+      "tick_index": 174,
+      "timestamp_ms": 1794339000000,
+      "datetime_utc_iso": "2026-11-10T19:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:30:00-05:00",
+      "display_time_cot": "14:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239824441.13,
+        "ETH": 6670325.36,
+        "USDT": 3267.44,
+        "SOL": 270186.59
+      },
+      "prices_usd_raw": {
+        "BTC": 73343.5,
+        "ETH": 2039.93,
+        "USDT": 0.9993,
+        "SOL": 82.63
+      },
+      "sim_second": 52200.0
+    },
+    {
+      "tick_index": 175,
+      "timestamp_ms": 1794339300000,
+      "datetime_utc_iso": "2026-11-10T19:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:35:00-05:00",
+      "display_time_cot": "14:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240012487.17,
+        "ETH": 6679109.87,
+        "USDT": 3267.31,
+        "SOL": 270424.26
+      },
+      "prices_usd_raw": {
+        "BTC": 73401.01,
+        "ETH": 2042.62,
+        "USDT": 0.9992,
+        "SOL": 82.7
+      },
+      "sim_second": 52500.0
+    },
+    {
+      "tick_index": 176,
+      "timestamp_ms": 1794339600000,
+      "datetime_utc_iso": "2026-11-10T19:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:40:00-05:00",
+      "display_time_cot": "14:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239639109.65,
+        "ETH": 6662283.74,
+        "USDT": 3267.28,
+        "SOL": 269765.68
+      },
+      "prices_usd_raw": {
+        "BTC": 73286.82,
+        "ETH": 2037.47,
+        "USDT": 0.9992,
+        "SOL": 82.5
+      },
+      "sim_second": 52800.0
+    },
+    {
+      "tick_index": 177,
+      "timestamp_ms": 1794339900000,
+      "datetime_utc_iso": "2026-11-10T19:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:45:00-05:00",
+      "display_time_cot": "14:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239729715.48,
+        "ETH": 6665770.13,
+        "USDT": 3267.34,
+        "SOL": 269901.17
+      },
+      "prices_usd_raw": {
+        "BTC": 73314.53,
+        "ETH": 2038.54,
+        "USDT": 0.9992,
+        "SOL": 82.54
+      },
+      "sim_second": 53100.0
+    },
+    {
+      "tick_index": 178,
+      "timestamp_ms": 1794340200000,
+      "datetime_utc_iso": "2026-11-10T19:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:50:00-05:00",
+      "display_time_cot": "14:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240236055.05,
+        "ETH": 6686202.89,
+        "USDT": 3267.41,
+        "SOL": 270992.82
+      },
+      "prices_usd_raw": {
+        "BTC": 73469.38,
+        "ETH": 2044.79,
+        "USDT": 0.9992,
+        "SOL": 82.88
+      },
+      "sim_second": 53400.0
+    },
+    {
+      "tick_index": 179,
+      "timestamp_ms": 1794340500000,
+      "datetime_utc_iso": "2026-11-10T19:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T14:55:00-05:00",
+      "display_time_cot": "14:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 14:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240148062.06,
+        "ETH": 6679703.35,
+        "USDT": 3267.16,
+        "SOL": 270778.3
+      },
+      "prices_usd_raw": {
+        "BTC": 73442.47,
+        "ETH": 2042.8,
+        "USDT": 0.9992,
+        "SOL": 82.81
+      },
+      "sim_second": 53700.0
+    },
+    {
+      "tick_index": 180,
+      "timestamp_ms": 1794340800000,
+      "datetime_utc_iso": "2026-11-10T20:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:00:00-05:00",
+      "display_time_cot": "15:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239976124.27,
+        "ETH": 6678268.16,
+        "USDT": 3267.33,
+        "SOL": 270878.11
+      },
+      "prices_usd_raw": {
+        "BTC": 73389.89,
+        "ETH": 2042.36,
+        "USDT": 0.9992,
+        "SOL": 82.84
+      },
+      "sim_second": 54000.0
+    },
+    {
+      "tick_index": 181,
+      "timestamp_ms": 1794341100000,
+      "datetime_utc_iso": "2026-11-10T20:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:05:00-05:00",
+      "display_time_cot": "15:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239612662.65,
+        "ETH": 6667317.88,
+        "USDT": 3267.41,
+        "SOL": 270411.28
+      },
+      "prices_usd_raw": {
+        "BTC": 73278.73,
+        "ETH": 2039.01,
+        "USDT": 0.9992,
+        "SOL": 82.7
+      },
+      "sim_second": 54300.0
+    },
+    {
+      "tick_index": 182,
+      "timestamp_ms": 1794341400000,
+      "datetime_utc_iso": "2026-11-10T20:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:10:00-05:00",
+      "display_time_cot": "15:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 239771140.07,
+        "ETH": 6674209.63,
+        "USDT": 3267.42,
+        "SOL": 270970.79
+      },
+      "prices_usd_raw": {
+        "BTC": 73327.2,
+        "ETH": 2041.12,
+        "USDT": 0.9992,
+        "SOL": 82.87
+      },
+      "sim_second": 54600.0
+    },
+    {
+      "tick_index": 183,
+      "timestamp_ms": 1794341700000,
+      "datetime_utc_iso": "2026-11-10T20:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:15:00-05:00",
+      "display_time_cot": "15:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240271803.15,
+        "ETH": 6696640.26,
+        "USDT": 3267.43,
+        "SOL": 271871.76
+      },
+      "prices_usd_raw": {
+        "BTC": 73480.31,
+        "ETH": 2047.98,
+        "USDT": 0.9993,
+        "SOL": 83.14
+      },
+      "sim_second": 54900.0
+    },
+    {
+      "tick_index": 184,
+      "timestamp_ms": 1794342000000,
+      "datetime_utc_iso": "2026-11-10T20:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:20:00-05:00",
+      "display_time_cot": "15:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240638178.48,
+        "ETH": 6706902.9,
+        "USDT": 3267.44,
+        "SOL": 272448.17
+      },
+      "prices_usd_raw": {
+        "BTC": 73592.36,
+        "ETH": 2051.12,
+        "USDT": 0.9993,
+        "SOL": 83.32
+      },
+      "sim_second": 55200.0
+    },
+    {
+      "tick_index": 185,
+      "timestamp_ms": 1794342300000,
+      "datetime_utc_iso": "2026-11-10T20:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:25:00-05:00",
+      "display_time_cot": "15:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240703639.22,
+        "ETH": 6705676.19,
+        "USDT": 3267.36,
+        "SOL": 272641.43
+      },
+      "prices_usd_raw": {
+        "BTC": 73612.38,
+        "ETH": 2050.74,
+        "USDT": 0.9992,
+        "SOL": 83.38
+      },
+      "sim_second": 55500.0
+    },
+    {
+      "tick_index": 186,
+      "timestamp_ms": 1794342600000,
+      "datetime_utc_iso": "2026-11-10T20:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:30:00-05:00",
+      "display_time_cot": "15:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240631638.65,
+        "ETH": 6702912.17,
+        "USDT": 3267.27,
+        "SOL": 272280.58
+      },
+      "prices_usd_raw": {
+        "BTC": 73590.36,
+        "ETH": 2049.9,
+        "USDT": 0.9992,
+        "SOL": 83.27
+      },
+      "sim_second": 55800.0
+    },
+    {
+      "tick_index": 187,
+      "timestamp_ms": 1794342900000,
+      "datetime_utc_iso": "2026-11-10T20:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:35:00-05:00",
+      "display_time_cot": "15:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240412393.94,
+        "ETH": 6695320.33,
+        "USDT": 3267.37,
+        "SOL": 271508.48
+      },
+      "prices_usd_raw": {
+        "BTC": 73523.31,
+        "ETH": 2047.57,
+        "USDT": 0.9992,
+        "SOL": 83.03
+      },
+      "sim_second": 56100.0
+    },
+    {
+      "tick_index": 188,
+      "timestamp_ms": 1794343200000,
+      "datetime_utc_iso": "2026-11-10T20:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:40:00-05:00",
+      "display_time_cot": "15:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240576617.35,
+        "ETH": 6699481.71,
+        "USDT": 3267.36,
+        "SOL": 271808.01
+      },
+      "prices_usd_raw": {
+        "BTC": 73573.53,
+        "ETH": 2048.85,
+        "USDT": 0.9992,
+        "SOL": 83.12
+      },
+      "sim_second": 56400.0
+    },
+    {
+      "tick_index": 189,
+      "timestamp_ms": 1794343500000,
+      "datetime_utc_iso": "2026-11-10T20:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:45:00-05:00",
+      "display_time_cot": "15:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 240729090.8,
+        "ETH": 6708498.48,
+        "USDT": 3267.28,
+        "SOL": 271946.5
+      },
+      "prices_usd_raw": {
+        "BTC": 73620.16,
+        "ETH": 2051.6,
+        "USDT": 0.9992,
+        "SOL": 83.17
+      },
+      "sim_second": 56700.0
+    },
+    {
+      "tick_index": 190,
+      "timestamp_ms": 1794343800000,
+      "datetime_utc_iso": "2026-11-10T20:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:50:00-05:00",
+      "display_time_cot": "15:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241192739.48,
+        "ETH": 6730637.77,
+        "USDT": 3267.22,
+        "SOL": 272755.73
+      },
+      "prices_usd_raw": {
+        "BTC": 73761.95,
+        "ETH": 2058.37,
+        "USDT": 0.9992,
+        "SOL": 83.41
+      },
+      "sim_second": 57000.0
+    },
+    {
+      "tick_index": 191,
+      "timestamp_ms": 1794344100000,
+      "datetime_utc_iso": "2026-11-10T20:55:00+00:00",
+      "datetime_cot_iso": "2026-11-10T15:55:00-05:00",
+      "display_time_cot": "15:55:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 15:55:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241163724.4,
+        "ETH": 6735045.95,
+        "USDT": 3267.23,
+        "SOL": 272654.81
+      },
+      "prices_usd_raw": {
+        "BTC": 73753.08,
+        "ETH": 2059.72,
+        "USDT": 0.9992,
+        "SOL": 83.38
+      },
+      "sim_second": 57300.0
+    },
+    {
+      "tick_index": 192,
+      "timestamp_ms": 1794344400000,
+      "datetime_utc_iso": "2026-11-10T21:00:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:00:00-05:00",
+      "display_time_cot": "16:00:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:00:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241003543.81,
+        "ETH": 6726798.85,
+        "USDT": 3267.09,
+        "SOL": 272226.73
+      },
+      "prices_usd_raw": {
+        "BTC": 73704.09,
+        "ETH": 2057.2,
+        "USDT": 0.9991,
+        "SOL": 83.25
+      },
+      "sim_second": 57600.0
+    },
+    {
+      "tick_index": 193,
+      "timestamp_ms": 1794344700000,
+      "datetime_utc_iso": "2026-11-10T21:05:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:05:00-05:00",
+      "display_time_cot": "16:05:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:05:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241572466.49,
+        "ETH": 6739389.0,
+        "USDT": 3267.29,
+        "SOL": 272510.97
+      },
+      "prices_usd_raw": {
+        "BTC": 73878.08,
+        "ETH": 2061.05,
+        "USDT": 0.9992,
+        "SOL": 83.34
+      },
+      "sim_second": 57900.0
+    },
+    {
+      "tick_index": 194,
+      "timestamp_ms": 1794345000000,
+      "datetime_utc_iso": "2026-11-10T21:10:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:10:00-05:00",
+      "display_time_cot": "16:10:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:10:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241700834.7,
+        "ETH": 6737251.34,
+        "USDT": 3266.92,
+        "SOL": 272815.21
+      },
+      "prices_usd_raw": {
+        "BTC": 73917.34,
+        "ETH": 2060.4,
+        "USDT": 0.9991,
+        "SOL": 83.43
+      },
+      "sim_second": 58200.0
+    },
+    {
+      "tick_index": 195,
+      "timestamp_ms": 1794345300000,
+      "datetime_utc_iso": "2026-11-10T21:15:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:15:00-05:00",
+      "display_time_cot": "16:15:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:15:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241555985.38,
+        "ETH": 6733552.11,
+        "USDT": 3266.93,
+        "SOL": 272562.95
+      },
+      "prices_usd_raw": {
+        "BTC": 73873.04,
+        "ETH": 2059.27,
+        "USDT": 0.9991,
+        "SOL": 83.36
+      },
+      "sim_second": 58500.0
+    },
+    {
+      "tick_index": 196,
+      "timestamp_ms": 1794345600000,
+      "datetime_utc_iso": "2026-11-10T21:20:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:20:00-05:00",
+      "display_time_cot": "16:20:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:20:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241668404.53,
+        "ETH": 6734876.06,
+        "USDT": 3266.94,
+        "SOL": 272752.61
+      },
+      "prices_usd_raw": {
+        "BTC": 73907.42,
+        "ETH": 2059.67,
+        "USDT": 0.9991,
+        "SOL": 83.41
+      },
+      "sim_second": 58800.0
+    },
+    {
+      "tick_index": 197,
+      "timestamp_ms": 1794345900000,
+      "datetime_utc_iso": "2026-11-10T21:25:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:25:00-05:00",
+      "display_time_cot": "16:25:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:25:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241526445.72,
+        "ETH": 6729146.95,
+        "USDT": 3267.02,
+        "SOL": 272334.45
+      },
+      "prices_usd_raw": {
+        "BTC": 73864.01,
+        "ETH": 2057.92,
+        "USDT": 0.9991,
+        "SOL": 83.29
+      },
+      "sim_second": 59100.0
+    },
+    {
+      "tick_index": 198,
+      "timestamp_ms": 1794346200000,
+      "datetime_utc_iso": "2026-11-10T21:30:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:30:00-05:00",
+      "display_time_cot": "16:30:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:30:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241645827.24,
+        "ETH": 6732451.24,
+        "USDT": 3266.91,
+        "SOL": 272679.47
+      },
+      "prices_usd_raw": {
+        "BTC": 73900.52,
+        "ETH": 2058.93,
+        "USDT": 0.9991,
+        "SOL": 83.39
+      },
+      "sim_second": 59400.0
+    },
+    {
+      "tick_index": 199,
+      "timestamp_ms": 1794346500000,
+      "datetime_utc_iso": "2026-11-10T21:35:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:35:00-05:00",
+      "display_time_cot": "16:35:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:35:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241593695.46,
+        "ETH": 6730113.03,
+        "USDT": 3267.29,
+        "SOL": 272574.79
+      },
+      "prices_usd_raw": {
+        "BTC": 73884.58,
+        "ETH": 2058.21,
+        "USDT": 0.9992,
+        "SOL": 83.36
+      },
+      "sim_second": 59700.0
+    },
+    {
+      "tick_index": 200,
+      "timestamp_ms": 1794346800000,
+      "datetime_utc_iso": "2026-11-10T21:40:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:40:00-05:00",
+      "display_time_cot": "16:40:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:40:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241428354.33,
+        "ETH": 6724823.35,
+        "USDT": 3267.25,
+        "SOL": 272454.3
+      },
+      "prices_usd_raw": {
+        "BTC": 73834.01,
+        "ETH": 2056.6,
+        "USDT": 0.9992,
+        "SOL": 83.32
+      },
+      "sim_second": 60000.0
+    },
+    {
+      "tick_index": 201,
+      "timestamp_ms": 1794347100000,
+      "datetime_utc_iso": "2026-11-10T21:45:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:45:00-05:00",
+      "display_time_cot": "16:45:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:45:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241312369.87,
+        "ETH": 6725996.6,
+        "USDT": 3266.97,
+        "SOL": 272673.17
+      },
+      "prices_usd_raw": {
+        "BTC": 73798.54,
+        "ETH": 2056.96,
+        "USDT": 0.9991,
+        "SOL": 83.39
+      },
+      "sim_second": 60300.0
+    },
+    {
+      "tick_index": 202,
+      "timestamp_ms": 1794347400000,
+      "datetime_utc_iso": "2026-11-10T21:50:00+00:00",
+      "datetime_cot_iso": "2026-11-10T16:50:00-05:00",
+      "display_time_cot": "16:50:00 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:50:00 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241409385.68,
+        "ETH": 6726483.63,
+        "USDT": 3266.98,
+        "SOL": 272815.09
+      },
+      "prices_usd_raw": {
+        "BTC": 73828.21,
+        "ETH": 2057.1,
+        "USDT": 0.9991,
+        "SOL": 83.43
+      },
+      "sim_second": 60600.0
+    },
+    {
+      "tick_index": 203,
+      "timestamp_ms": 1794347670000,
+      "datetime_utc_iso": "2026-11-10T21:54:30+00:00",
+      "datetime_cot_iso": "2026-11-10T16:54:30-05:00",
+      "display_time_cot": "16:54:30 COT",
+      "display_date_cot": "10 de Noviembre de 2026",
+      "display_full_cot": "10/11/2026 16:54:30 COT",
+      "is_observed_point": true,
+      "prices_cop": {
+        "BTC": 241230047.11,
+        "ETH": 6721020.84,
+        "USDT": 3267.23,
+        "SOL": 272555.81
+      },
+      "prices_usd_raw": {
+        "BTC": 73773.36,
+        "ETH": 2055.43,
+        "USDT": 0.9992,
+        "SOL": 83.35
+      },
+      "sim_second": 60870.0
+    }
+  ]
+}

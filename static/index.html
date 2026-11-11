@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Lab - Plataforma Financiera & Trazabilidad</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+
+  <!-- Subtle Top System Bar -->
+  <div class="system-subbar">
+    <span>CRYPTO LAB &bull; PLATAFORMA DE OPERACIONES FINANCIERAS</span>
+    <span class="mono">ENTORNO DE PRUEBAS CONTROLADO</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-tag">CRYPTO LAB</span>
+      <span class="logo-badge">TERMINAL</span>
+    </a>
+    <div id="user-nav-status" style="display: none; align-items: center; gap: 1rem;">
+      <div style="text-align: right;">
+        <div id="nav-alias" style="font-weight: 700; font-size: 0.95rem; color: #fff;"></div>
+        <div id="nav-room" style="font-size: 0.75rem; color: var(--accent);"></div>
+      </div>
+      <button class="btn btn-secondary btn-sm" id="btn-logout" title="Cerrar sesión">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- SCREEN 1: JOIN ROOM -->
+    <section id="view-join" style="max-width: 480px; margin: 3.5rem auto;">
+      <div class="card" style="padding: 2.25rem;">
+        <div style="margin-bottom: 2rem;">
+          <h1 style="font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">Acceso a Terminal</h1>
+          <p style="color: var(--text-muted); font-size: 0.88rem;">Ingresa el código de sala y define tu alias de participante para operar.</p>
+        </div>
+
+        <form id="form-join">
+          <div class="form-group">
+            <label class="form-label">Código de Sala</label>
+            <input type="text" id="join-room-code" class="form-control mono" placeholder="Ej: LAB101" required autofocus style="text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">
+            <small style="color: var(--text-dim); font-size: 0.75rem;">Código provisto para la sesión o escaneado vía QR.</small>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Alias de Participante</label>
+            <input type="text" id="join-alias" class="form-control" placeholder="Ej: HORIZONTE" required style="font-weight: 600;">
+            <small style="color: var(--text-dim); font-size: 0.75rem;">Identificador único dentro de la sala activa.</small>
+          </div>
+
+          <div id="join-alert" style="display: none; padding: 0.75rem; border-radius: 6px; margin-bottom: 1rem; font-size: 0.85rem;" class="badge-danger"></div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-join">
+            <span>Ingresar a la Plataforma</span>
+          </button>
+        </form>
+
+        <div style="margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color); text-align: center;">
+          <a href="/admin" style="color: var(--text-dim); font-size: 0.8rem; text-decoration: none;">Acceso a Consola de Administración</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: MAIN DASHBOARD -->
+    <section id="view-dashboard" style="display: none;">
+
+      <!-- Live Notification Banner -->
+      <div id="global-message" style="display: none; padding: 0.75rem 1rem; border-radius: 6px; margin-bottom: 1.25rem; font-size: 0.88rem; align-items: center; justify-content: space-between;"></div>
+
+      <!-- MARKET REPLAY SIMULATION BAR -->
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--primary); border-radius: var(--radius-md); padding: 0.95rem 1.35rem; margin-bottom: 1.35rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+        <div style="display: flex; align-items: center; gap: 0.85rem;">
+          <span id="replay-status-badge" class="badge badge-success">EN EJECUCIÓN</span>
+          <div>
+            <div style="font-weight: 700; font-size: 0.92rem; color: #fff;">
+              Mercado Histórico Sincronizado <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: 400;">(10 Noviembre 2026)</span>
+            </div>
+            <div id="replay-sim-datetime" class="mono" style="font-size: 0.8rem; color: var(--accent);">
+              10 Nov 2026 — 00:00:00 UTC
+            </div>
+          </div>
+        </div>
+        <div style="min-width: 240px; flex: 1; max-width: 340px;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.3rem;">
+            <span>Tiempo de Sesión (30 min)</span>
+            <span id="replay-elapsed-text" class="mono">00:00 / 30:00</span>
+          </div>
+          <div style="background: #090e1a; border-radius: 9999px; height: 6px; overflow: hidden; border: 1px solid var(--border-color);">
+            <div id="replay-progress-bar" style="background: var(--primary); width: 0%; height: 100%; transition: width 0.3s ease;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Financial Stat Cards -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">Cuenta Bancaria (COP)</div>
+          <div class="stat-value mono" id="stat-bank-cop">COP 0</div>
+          <div class="stat-sub">Fondos de reserva en custodia bancaria</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Billetera Operativa (COP)</div>
+          <div class="stat-value mono" id="stat-wallet-cop">COP 0</div>
+          <div class="stat-sub">Saldo disponible para compra de activos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Posición en Criptoactivos (COP)</div>
+          <div class="stat-value mono" id="stat-wallet-crypto-cop" style="color: var(--accent);">COP 0</div>
+          <div class="stat-sub">Valoración a precios de mercado vigentes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Patrimonio Total</div>
+          <div class="stat-value mono" id="stat-total-patrimonio" style="color: var(--primary);">COP 0</div>
+          <div class="stat-sub">Custodia + disponible + activos digitales</div>
+        </div>
+      </div>
+
+      <!-- Main Navigation Tabs -->
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="tab-portfolio">Portafolio</button>
+        <button class="tab-btn" data-tab="tab-bank">Banco / Billetera</button>
+        <button class="tab-btn" data-tab="tab-market">Mercado Histórico</button>
+        <button class="tab-btn" data-tab="tab-trade">Comprar / Vender</button>
+        <button class="tab-btn" data-tab="tab-transfer">Transferir</button>
+        <button class="tab-btn" data-tab="tab-history">Historial Contable</button>
+      </nav>
+
+      <!-- TAB 1: PORTFOLIO -->
+      <div id="tab-portfolio" class="tab-pane">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Posiciones y Tenencias</h2>
+              <div class="card-subtitle">Balances consolidados en billetera multiactivo</div>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="btn-refresh-balances">Actualizar</button>
+          </div>
+
+          <div id="assets-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: BANK / WALLET -->
+      <div id="tab-bank" class="tab-pane" style="display: none;">
+        <div class="card" style="max-width: 580px; margin: 0 auto;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Traslado de Fondos COP</h2>
+              <div class="card-subtitle">Movimiento interno entre custodia bancaria y billetera</div>
+            </div>
+            <span class="badge badge-success">Comisión 0%</span>
+          </div>
+
+          <form id="form-bank-transfer">
+            <div class="form-group">
+              <label class="form-label">Dirección del Traslado</label>
+              <select id="bank-direction" class="form-control">
+                <option value="DEPOSIT">Cuenta Bancaria → Billetera COP</option>
+                <option value="WITHDRAW">Billetera COP → Cuenta Bancaria</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+                <label class="form-label" style="margin-bottom: 0;">Monto a Trasladar (COP)</label>
+                <span id="bank-available-label" style="font-size: 0.78rem; color: var(--accent); cursor: pointer;">Disponible: COP 0</span>
+              </div>
+              <input type="number" id="bank-amount" class="form-control mono" placeholder="0" min="1" step="any" required>
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="setBankAmountPercent(0.25)">25%</button>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="setBankAmountPercent(0.50)">50%</button>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="setBankAmountPercent(0.75)">75%</button>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="setBankAmountPercent(1.0)">100%</button>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-bank">
+              <span>Confirmar Traslado</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- TAB 3: MARKET TERMINAL (MARKET REPLAY) -->
+      <div id="tab-market" class="tab-pane" style="display: none;">
+        <!-- Trading Terminal Card -->
+        <div class="market-terminal-card">
+          <!-- Zone 1: Terminal Header & Stats Bar -->
+          <div class="terminal-header">
+            <div class="asset-headline">
+              <div class="asset-badge-lg" id="chart-asset-badge">BTC</div>
+              <div>
+                <div class="asset-title-row">
+                  <span class="asset-main-name" id="chart-asset-name">Bitcoin</span>
+                  <span class="asset-main-pair" id="chart-asset-pair">BTC / COP</span>
+                  <span class="asset-nature-badge" id="chart-price-nature">Cotización Real</span>
+                </div>
+                <div class="asset-price-row">
+                  <span class="asset-featured-price mono" id="chart-featured-price">COP 0</span>
+                  <span class="badge badge-success" id="chart-featured-change">0.00%</span>
+                  <span class="badge badge-success" id="chart-replay-status">En Reproducción</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="terminal-stats-grid">
+              <div class="stat-mini">
+                <span class="stat-mini-label">Máx Período (24h)</span>
+                <span class="stat-mini-val mono" id="chart-stat-high">COP 0</span>
+              </div>
+              <div class="stat-mini">
+                <span class="stat-mini-label">Mín Período (24h)</span>
+                <span class="stat-mini-val mono" id="chart-stat-low">COP 0</span>
+              </div>
+              <div class="stat-mini">
+                <span class="stat-mini-label">Hora Simulada (COT)</span>
+                <span class="stat-mini-val mono" id="chart-stat-time">--:--:--</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zone 2: Chart Toolbar (Asset Pills + Zoom Controls) -->
+          <div class="chart-toolbar">
+            <div class="chart-asset-pills">
+              <button type="button" class="chart-pill active" data-asset="BTC" onclick="switchChartAsset('BTC')">BTC</button>
+              <button type="button" class="chart-pill" data-asset="ETH" onclick="switchChartAsset('ETH')">ETH</button>
+              <button type="button" class="chart-pill" data-asset="USDT" onclick="switchChartAsset('USDT')">USDT</button>
+              <button type="button" class="chart-pill" data-asset="SOL" onclick="switchChartAsset('SOL')">SOL</button>
+            </div>
+
+            <div class="chart-zoom-controls">
+              <button type="button" class="chart-tool-btn" onclick="chartZoomIn()" title="Acercar">+</button>
+              <button type="button" class="chart-tool-btn" onclick="chartZoomOut()" title="Alejar">−</button>
+              <button type="button" class="chart-tool-btn" onclick="chartResetZoom()" title="Restablecer">Auto</button>
+            </div>
+          </div>
+
+          <!-- Chart Viewport (Interactive Lightweight Charts Canvas + Overlays) -->
+          <div id="replay-chart-container" class="chart-viewport">
+            <div id="chart-floating-tooltip" class="chart-floating-tooltip" style="display: none;"></div>
+            <div id="chart-beacon-dot" class="chart-beacon-dot" style="display: none;"></div>
+          </div>
+
+          <!-- Zone 3: Market Overview Table with Sparklines & Direct Trading Actions -->
+          <div class="card-header" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-bottom: 0.75rem;">
+            <div>
+              <h3 class="card-title" style="font-size: 0.95rem;">Cotizaciones en Tiempo Real</h3>
+              <div class="card-subtitle">Libro de precios sincronizado con el reloj del servidor</div>
+            </div>
+            <div id="market-source-tag" class="mono" style="font-size: 0.72rem; color: var(--text-dim);">
+              10-Nov-2026 &bull; TRM $3.269,88
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Activo</th>
+                  <th>Precio Actual (COP)</th>
+                  <th>Variación 24h</th>
+                  <th>Rango Período</th>
+                  <th>Tendencia</th>
+                  <th>Tipo</th>
+                  <th class="text-right">Operar</th>
+                </tr>
+              </thead>
+              <tbody id="market-table-body">
+                <!-- Dynamically populated with sparklines and quick buy/sell -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: TRADE (BUY/SELL) -->
+      <div id="tab-trade" class="tab-pane" style="display: none;">
+        <div class="card" style="max-width: 620px; margin: 0 auto;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Negociación de Activos</h2>
+              <div class="card-subtitle">Compra y venta contra saldo en Billetera COP</div>
+            </div>
+            <span class="badge badge-info">Comisión: 0.2%</span>
+          </div>
+
+          <!-- Trade Side Toggle -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1.35rem;">
+            <button type="button" class="btn btn-primary" id="btn-side-buy" onclick="setTradeSide('BUY')">Comprar Criptoactivo</button>
+            <button type="button" class="btn btn-secondary" id="btn-side-sell" onclick="setTradeSide('SELL')">Vender Criptoactivo</button>
+          </div>
+
+          <form id="form-trade">
+            <div class="form-group">
+              <label class="form-label">Criptoactivo</label>
+              <select id="trade-asset" class="form-control" onchange="updateTradeCalculator()">
+                <option value="USDT">Tether USD (USDT)</option>
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="SOL">Solana (SOL)</option>
+              </select>
+            </div>
+
+            <div style="background: rgba(10, 15, 29, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 0.9rem; margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-muted);">
+                <span>Precio de Mercado:</span>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span id="trade-nature-badge" class="badge badge-success" style="font-size: 0.68rem;">Observado Real</span>
+                  <span id="trade-unit-price" class="mono" style="font-weight: 700; color: #fff;">COP 0</span>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-dim); margin-top: 0.4rem;">
+                <span>Hora de Liquidación:</span>
+                <span id="trade-sim-time-cot" class="mono" style="color: var(--accent);">10 Nov 2026 — 00:00:00 COT</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--text-dim); margin-top: 0.4rem;">
+                <span id="trade-balance-label">Disponible para operar:</span>
+                <span id="trade-available-balance" class="mono" style="color: var(--accent); cursor: pointer;" onclick="useMaxTradeBalance()">0</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+                <label class="form-label" id="trade-input-label" style="margin-bottom: 0;">Cantidad a Comprar</label>
+                <span style="font-size: 0.75rem; color: var(--text-dim);" id="trade-unit-symbol">USDT</span>
+              </div>
+              <input type="number" id="trade-amount" class="form-control mono" placeholder="0.00" min="0.00000001" step="any" required oninput="updateTradeCalculator()">
+              <div class="pct-chips-row">
+                <button type="button" class="pct-chip" onclick="setTradeAmountPercent(0.25)">25%</button>
+                <button type="button" class="pct-chip" onclick="setTradeAmountPercent(0.50)">50%</button>
+                <button type="button" class="pct-chip" onclick="setTradeAmountPercent(0.75)">75%</button>
+                <button type="button" class="pct-chip" onclick="setTradeAmountPercent(1.00)">100%</button>
+              </div>
+            </div>
+
+            <!-- Order Summary Card -->
+            <div style="background: rgba(13, 21, 39, 0.6); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.35rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.35rem;">
+                <span style="color: var(--text-muted);">Subtotal Operación:</span>
+                <span id="summary-subtotal" class="mono">COP 0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.35rem;">
+                <span style="color: var(--text-muted);">Comisión de Plataforma (0.2%):</span>
+                <span id="summary-fee" class="mono" style="color: var(--warning);">COP 0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.95rem; font-weight: 700; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+                <span id="summary-total-label">Total a Debitar:</span>
+                <span id="summary-total" class="mono" style="color: var(--primary);">COP 0</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-trade">
+              <span>Confirmar Orden</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- TAB 5: TRANSFERS -->
+      <div id="tab-transfer" class="tab-pane" style="display: none;">
+        <div class="card" style="max-width: 620px; margin: 0 auto;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Transferencias de Fondos</h2>
+              <div class="card-subtitle">Envíos directos entre participantes o a destino externo</div>
+            </div>
+            <span class="badge badge-success">Comisión 0%</span>
+          </div>
+
+          <!-- Transfer Type Selector -->
+          <div class="form-group">
+            <label class="form-label">Destino de la Transferencia</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+              <button type="button" class="btn btn-accent" id="btn-type-internal" onclick="setTransferType('INTERNAL')">
+                Interna (Participante)
+              </button>
+              <button type="button" class="btn btn-secondary" id="btn-type-external" onclick="setTransferType('EXTERNAL')">
+                Externa (Dirección Blockchain)
+              </button>
+            </div>
+          </div>
+
+          <form id="form-transfer">
+            <div class="form-group">
+              <label class="form-label">Activo a Transferir</label>
+              <select id="transfer-asset" class="form-control" onchange="updateTransferMaxBalance()">
+                <option value="USDT">Tether USD (USDT)</option>
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="SOL">Solana (SOL)</option>
+                <option value="COP">Pesos Colombianos (COP)</option>
+              </select>
+            </div>
+
+            <!-- Destination input (Internal) -->
+            <div class="form-group" id="group-dest-internal">
+              <label class="form-label">Alias del Destinatario</label>
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="text" id="transfer-dest-alias" class="form-control" placeholder="Ej: USUARIO_B" style="font-weight: 600;">
+                <select id="select-peer" class="form-control" style="max-width: 170px;" onchange="if(this.value) document.getElementById('transfer-dest-alias').value = this.value;">
+                  <option value="">Seleccionar...</option>
+                </select>
+              </div>
+              <small style="color: var(--text-dim); font-size: 0.75rem;">Participante registrado en la misma sala.</small>
+            </div>
+
+            <!-- Destination input (External) -->
+            <div class="form-group" id="group-dest-external" style="display: none;">
+              <label class="form-label">Dirección Externa Simulada (Blockchain Address)</label>
+              <input type="text" id="transfer-dest-external" class="form-control mono" placeholder="Ej: 0x71C... o bc1q...">
+              <div style="display: flex; gap: 0.5rem; margin-top: 0.4rem;">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="generateSimulatedAddress()">Generar Dirección de Prueba</button>
+              </div>
+              <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 4px; padding: 0.65rem; margin-top: 0.5rem; font-size: 0.78rem; color: #fca5a5;">
+                <strong>Nota de Trazabilidad:</strong> Al transferir a una dirección externa, los fondos salen del perímetro interno de la plataforma. La trazabilidad contable interna finalizará en este punto.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+                <label class="form-label" style="margin-bottom: 0;">Monto a Transferir</label>
+                <span id="transfer-avail-label" style="font-size: 0.78rem; color: var(--accent); cursor: pointer;" onclick="useMaxTransfer()">Disponible: 0</span>
+              </div>
+              <input type="number" id="transfer-amount" class="form-control mono" placeholder="0.00" min="0.00000001" step="any" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Concepto o Referencia (Opcional)</label>
+              <input type="text" id="transfer-notes" class="form-control" placeholder="Ej: Liquidación de activos / facturación comercial">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-transfer">
+              <span>Ejecutar Transferencia</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- TAB 6: HISTORY & BLOCKCHAIN EXPLORER -->
+      <div id="tab-history" class="tab-pane" style="display: none;">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Historial Contable de Operaciones</h2>
+              <div class="card-subtitle">Registro cronológico completo de movimientos internos y de mercado</div>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="btn-refresh-history">Actualizar</button>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Fecha / Hora (COT)</th>
+                  <th>Operación</th>
+                  <th>Origen</th>
+                  <th>Destino</th>
+                  <th>Activo</th>
+                  <th class="text-right">Cantidad</th>
+                  <th class="text-right">Valor en COP</th>
+                  <th class="text-right">Comisión</th>
+                  <th>Estado</th>
+                  <th>Hash / Referencia</th>
+                </tr>
+              </thead>
+              <tbody id="history-table-body">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Discreet Footer Legal Notice -->
+    <footer class="footer-note">
+      CRYPTO LAB &bull; Plataforma de simulación financiera y auditoría de transacciones con fines educativos y de investigación.
+    </footer>
+
+  </main>
+
+  <!-- CONFIRMATION / DETAILS MODAL -->
+  <div class="modal-overlay" id="modal-confirm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-confirm-title" style="font-size: 1.15rem; font-weight: 700; color: #fff;">Confirmación de Operación</h3>
+        <button class="modal-close" onclick="closeModal('modal-confirm')">&times;</button>
+      </div>
+      <div id="modal-confirm-body" style="font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.6;">
+        <!-- Dynamically filled -->
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button class="btn btn-secondary" onclick="closeModal('modal-confirm')">Cancelar</button>
+        <button class="btn btn-primary" id="modal-btn-confirm-action">Confirmar y Procesar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
